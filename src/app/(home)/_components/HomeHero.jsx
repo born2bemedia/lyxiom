@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 import MainButton from "@/components/MainButton";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/autoplay";
 
 const HomeHero = () => {
   const [activeSlide, setActiveSlide] = useState(1); // Track active slide
@@ -34,8 +36,12 @@ const HomeHero = () => {
             <Swiper
               spaceBetween={36}
               slidesPerView={1}
-              autoplay={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex + 1)}
+              modules={[Autoplay]}
             >
               {slides.map((slide) => (
                 <SwiperSlide key={slide.id}>
