@@ -110,12 +110,6 @@
         flex-wrap: wrap;
         gap: rem(20);
       }
-      * {
-        opacity: 0.5;
-        @media (max-width: rem(992)) {
-          opacity: 1;
-        }
-      }
       &:hover {
         * {
           opacity: 1;
@@ -140,8 +134,10 @@
         font-weight: 300;
         line-height: 1.2;
         text-align: left;
+        opacity: 0.5;
         @media (max-width: rem(992)) {
           font-size: rem(16);
+          opacity: 1;
         }
       }
       h3 {
@@ -151,9 +147,11 @@
         line-height: 1.2;
         text-align: left;
         width: rem(220);
+        opacity: 0.5;
         @media (max-width: rem(992)) {
           font-size: rem(24);
           flex-grow: 1;
+          opacity: 1;
         }
       }
       p {
@@ -163,8 +161,16 @@
         line-height: 1.2;
         text-align: left;
         width: rem(464);
+        opacity: 0.5;
         @media (max-width: rem(992)) {
           width: 100%;
+          opacity: 1;
+        }
+      }
+      a {
+        opacity: 0.5;
+        @media (max-width: rem(992)) {
+          opacity: 1;
         }
       }
     }
