@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import { Red_Hat_Display } from "next/font/google";
 import "@/styles/base.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 export const metadata = {

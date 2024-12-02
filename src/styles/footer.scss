@@ -1,1 +1,81 @@
 @use "mixin" as *;
+
+.footer {
+  &__body {
+    display: flex;
+    .col-01 {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      a {
+        display: flex;
+      }
+      p {
+        color: #3516b1;
+        font-size: rem(16);
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: rem(10);
+      }
+    }
+    .col-02 {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      .row {
+        padding: rem(20) 0;
+        border-bottom: 1px solid #f2f2f24d;
+        display: flex;
+        &:last-child {
+          border: none;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &.main-menu {
+          > div {
+            > a {
+              font-weight: 500;
+            }
+          }
+        }
+        > div {
+          width: 25%;
+          span {
+            color: #3516b1;
+            font-size: rem(16);
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            a {
+              color: #3516b1;
+              font-size: rem(16);
+              font-weight: 700;
+              line-height: 1.2;
+              text-align: left;
+            }
+          }
+          > a {
+            color: #ffffff;
+            font-size: rem(16);
+            font-weight: 300;
+            line-height: 1.2;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  &__copy {
+    padding: rem(30) 0;
+    border-top: 1px solid #f2f2f24d;
+    color: #ffffff80;
+    font-size: rem(16);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: left;
+    text-align: center;
+  }
+}

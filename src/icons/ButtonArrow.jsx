@@ -1,0 +1,20 @@
+import React from "react";
+
+const ButtonArrow = () => {
+  return (
+    <svg
+      width="13"
+      height="12"
+      viewBox="0 0 13 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.0609749 5.29264L9.38629 5.29264L5.76434 1.67069L6.90244 0.532593L12.4674 6.09752L6.90244 11.6624L5.76434 10.5243L9.38629 6.9024L0.0609748 6.9024L0.0609749 5.29264Z"
+        fill="black"
+      />
+    </svg>
+  );
+};
+
+export default ButtonArrow;
