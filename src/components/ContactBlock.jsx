@@ -6,7 +6,7 @@ import Link from "next/link";
 import ButtonArrow from "@/icons/ButtonArrow";
 import MainButton from "./MainButton";
 
-const ContactBlock = () => {
+const ContactBlock = ({ text, buttonText, buttonLink, imageUrl }) => {
   return (
     <section className="contact-block">
       <div className="_container">
@@ -17,8 +17,9 @@ const ContactBlock = () => {
           variants={fadeInUp}
           className="contact-block__body"
         >
-          <h2>Need Assistance? Contact Lyxiom!</h2>
-          <MainButton text={"Contact Us"} link={"#"} />
+          <div style={{ backgroundImage: `url(${imageUrl})` }}></div>
+          <h2 dangerouslySetInnerHTML={{ __html: text }} />
+          <MainButton text={buttonText} link={buttonLink} />
         </motion.div>
       </div>
     </section>

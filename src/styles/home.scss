@@ -273,36 +273,7 @@
   }
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  z-index: 0;
-
-  .marquee {
-    display: inline-block;
-    animation: marquee 200s linear infinite;
-    color: #000000;
-    font-size: rem(220);
-    font-weight: 700;
-    line-height: 1;
-    text-align: left;
-    position: relative;
-    @media (max-width: rem(992)) {
-      font-size: rem(104);
-    }
-  }
-}
 
 .response-challenges {
   margin: rem(180) 0;

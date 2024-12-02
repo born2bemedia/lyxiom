@@ -72,7 +72,7 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="wrapper">
-                    <Link href="/services" onClick={closeMenu}>Our Services</Link>
+                    <Link href="/services" onClick={closeMenu}>custom </Link>
                     <button type="button" className="btn">
                       {!submenuOpen["services"] ? (
                         <img src="/images/menu-right.svg" alt="expand" />

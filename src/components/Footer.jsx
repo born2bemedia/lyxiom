@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
             <div className="row main-menu">
               <div>
-                <Link href="#">Our Services</Link>
+                <Link href="/services">Our Services</Link>
               </div>
               <div>
                 <Link href="#">Complex Solutions</Link>

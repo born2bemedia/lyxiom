@@ -26,7 +26,12 @@ export default function Home() {
         buttonText={"Go Learning"}
         subtitle="Learn how to build, grow and scale your brand: market insights, brand packing lessons, expertly crafted strategies and more."
       />
-      <ContactBlock />
+      <ContactBlock
+        text="Need Assistance? Contact Lyxiom!"
+        buttonText="Contact Us"
+        buttonLink="#"
+        imageUrl="/images/home/contact.webp"
+      />
     </>
   );
 }
