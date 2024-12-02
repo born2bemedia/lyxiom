@@ -100,15 +100,15 @@
   &__body {
     .row {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       padding: rem(50) rem(0);
       border-bottom: 0.5px solid #5f5f5f;
-
+      gap: rem(90);
       @media (max-width: rem(992)) {
         padding: rem(20) rem(0);
         flex-wrap: wrap;
-        gap: rem(20);
+        column-gap: 0;
+        row-gap: rem(20);
       }
       &:hover {
         * {
@@ -135,9 +135,11 @@
         line-height: 1.2;
         text-align: left;
         opacity: 0.5;
+        width: 50px;
         @media (max-width: rem(992)) {
           font-size: rem(16);
           opacity: 1;
+          width: rem(40);
         }
       }
       h3 {
