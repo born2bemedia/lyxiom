@@ -99,6 +99,9 @@ body {
         padding-right: 0;
       }
     }
+    header{
+      padding-right: rem(10);
+    }
   }
 
   &::-webkit-scrollbar {
