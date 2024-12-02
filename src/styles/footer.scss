@@ -3,10 +3,17 @@
 .footer {
   &__body {
     display: flex;
+    @media (max-width: rem(992)) {
+      flex-direction: column;
+      gap: rem(50);
+    }
     .col-01 {
       width: 30%;
       display: flex;
       flex-direction: column;
+      @media (max-width: rem(992)) {
+        width: 100%;
+      }
       a {
         display: flex;
       }
@@ -24,10 +31,17 @@
       width: 70%;
       display: flex;
       flex-direction: column;
+      @media (max-width: rem(992)) {
+        width: 100%;
+      }
       .row {
         padding: rem(20) 0;
         border-bottom: 1px solid #f2f2f24d;
         display: flex;
+        @media (max-width: rem(992)) {
+          flex-wrap: wrap;
+          row-gap: rem(20);
+        }
         &:last-child {
           border: none;
         }
@@ -43,6 +57,9 @@
         }
         > div {
           width: 25%;
+          @media (max-width: rem(992)) {
+            width: 50%;
+          }
           span {
             color: #3516b1;
             font-size: rem(16);
@@ -77,5 +94,8 @@
     line-height: 1.2;
     text-align: left;
     text-align: center;
+    @media (max-width: rem(992)) {
+      text-align: left;
+    }
   }
 }

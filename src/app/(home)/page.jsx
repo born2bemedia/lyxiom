@@ -5,10 +5,12 @@ import Image from "next/image";
 import WhatMeans from "./_components/WhatMeans";
 import ResponseChallenges from "./_components/ResponseChallenges";
 import HomeChanges from "./_components/HomeChanges";
+import HomeHero from "./_components/HomeHero";
 
 export default function Home() {
   return (
     <>
+      <HomeHero />
       <HomeChanges />
       <ResponseChallenges />
       <CtaBlock

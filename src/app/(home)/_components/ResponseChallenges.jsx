@@ -39,6 +39,11 @@ const ResponseChallenges = () => {
             <span className="arrow">
               <ButtonArrow />
             </span>
+            <p className="mobile-text">
+              Crafting and positioning brands with a winning strategy,
+              integrating product, service, and experience design to ensure
+              impactful market entry and growth.
+            </p>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -61,6 +66,10 @@ const ResponseChallenges = () => {
             <span className="arrow">
               <ButtonArrow />
             </span>
+            <p className="mobile-text">
+              Developing targeted, data-driven content that resonates, drives
+              engagement, and keeps audiences connected across all channels.
+            </p>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -83,6 +92,11 @@ const ResponseChallenges = () => {
             <span className="arrow">
               <ButtonArrow />
             </span>
+            <p className="mobile-text">
+              Developing tailored social media strategies to increase reach and
+              engagement, leveraging trends and real-time data to build a loyal
+              following.
+            </p>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -105,6 +119,11 @@ const ResponseChallenges = () => {
             <span className="arrow">
               <ButtonArrow />
             </span>
+            <p className="mobile-text">
+              Optimising every aspect of your brand for search, ensuring maximum
+              visibility with precise, trend-driven keyword strategies and
+              technical excellence.
+            </p>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -127,6 +146,10 @@ const ResponseChallenges = () => {
             <span className="arrow">
               <ButtonArrow />
             </span>
+            <p className="mobile-text">
+              Running advanced ad campaigns focused on cost efficiency and high
+              ROI, adapting quickly to market changes and user behaviour trends.
+            </p>
           </motion.div>
         </div>
         <MainButton text={"Explore Services"} link={"#"} />

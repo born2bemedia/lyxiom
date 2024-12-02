@@ -56,6 +56,7 @@
     @media (max-width: 767px) {
       top: 75px;
       min-height: calc(100vh - 75px);
+      width: 100%;
     }
 
     &._active {
@@ -76,7 +77,7 @@
   &__item-menu {
     max-width: 310px;
     &:first-child {
-      >a {
+      > a {
         text-transform: uppercase;
       }
     }
@@ -95,7 +96,9 @@
       align-items: center;
       justify-content: space-between;
       transition: all 0.3s ease 0s;
-
+      @media (max-width: 767px) {
+        padding: 20px 0;
+      }
       &:hover {
         color: #3516b1;
       }
@@ -106,18 +109,18 @@
         padding: 0;
         border: none;
       }
-      .btn{
-        img{
-            transform: rotate(0);
-            transition: all 0.5s;
+      .btn {
+        img {
+          transform: rotate(0);
+          transition: all 0.5s;
         }
       }
       &:hover {
-        .btn{
-            img{
-                transform: rotate(-180deg);
-            }
+        .btn {
+          img {
+            transform: rotate(-180deg);
           }
+        }
       }
     }
 
@@ -144,6 +147,9 @@
   }
 
   &__submenu {
+    @media (max-width: 767px) {
+      padding: 0 !important;
+    }
     @media (min-width: 992px) {
       position: absolute;
       top: 80px;
@@ -159,7 +165,7 @@
       text-transform: none;
       font-weight: 300;
       @media (max-width: 992px) {
-        padding: 15px 38px;
+        padding: 15px 20px;
         font-size: 18px;
         line-height: normal;
         text-transform: none;
