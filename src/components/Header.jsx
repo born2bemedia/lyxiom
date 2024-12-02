@@ -72,7 +72,7 @@ const Header = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="wrapper">
-                    <Link href="/services" onClick={closeMenu}>custom </Link>
+                    <Link href="/services" onClick={closeMenu}>Our Services </Link>
                     <button type="button" className="btn">
                       {!submenuOpen["services"] ? (
                         <img src="/images/menu-right.svg" alt="expand" />
@@ -91,7 +91,7 @@ const Header = () => {
                     }}
                   >
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>Brand Design</Link>
+                      <Link href="/services/brand-design" onClick={closeMenu}>Brand Design</Link>
                     </li>
                     <li className="header__subitem">
                       <Link href="#" onClick={closeMenu}>Product, Service, Experience Design</Link>

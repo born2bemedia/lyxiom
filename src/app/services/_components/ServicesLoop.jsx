@@ -11,7 +11,7 @@ const services = [
     description:
       "A strong brand starts with research and strategy. We deliver market insights, target audience analysis, and core brand concepts, laying the groundwork for impactful growth.",
     buttonText: "Start",
-    buttonLink: "#",
+    buttonLink: "brand-design",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const services = [
     description:
       "Products and services gain value through intuitive design and purposeful interactions. Using user research and behavioural insights, we create solutions that connect seamlessly with your audience.",
     buttonText: "Invent",
-    buttonLink: "#",
+    buttonLink: "product-service-experience-design",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const services = [
     description:
       "Every brand has a story. Through tailored narratives, structured messaging, and creative execution, we shape a cohesive voice that aligns with your goals and audience.",
     buttonText: "Create",
-    buttonLink: "#",
+    buttonLink: "content-and-brand-story-design",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const services = [
     description:
       "Effective social media presence requires consistency and relevance. We provide platform-specific strategies, content creation, and audience engagement tailored to your goals.",
     buttonText: "Go Social",
-    buttonLink: "#",
+    buttonLink: "smm",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const services = [
     description:
       "Visibility in search is built on precision. Our approach integrates technical improvements, keyword research, and content alignment to elevate your discoverability.",
     buttonText: "Go Top",
-    buttonLink: "#",
+    buttonLink: "seo",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const services = [
     description:
       "Advertising success relies on data and adaptability. We deliver precise audience segmentation, real-time adjustments, and optimised campaigns for impactful results.",
     buttonText: "Advertise",
-    buttonLink: "#",
+    buttonLink: "performance",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const services = [
     description:
       "Sustainable growth comes from strategy and adaptability. We focus on operational efficiency, audience expansion, and innovative solutions to help your brand reach new heights.",
     buttonText: "Scale",
-    buttonLink: "#",
+    buttonLink: "brand-scaling",
   },
 ];
 
@@ -82,7 +82,10 @@ const ServicesLoop = () => {
               </span>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <MainButton text={service.buttonText} link={service.buttonLink} />
+              <MainButton
+                text={service.buttonText}
+                link={`/services/${service.buttonLink}`}
+              />
             </motion.div>
           ))}
         </div>
