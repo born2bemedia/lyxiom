@@ -54,7 +54,10 @@ const Header = () => {
             </Link>
           </div>
           <div className="header__col-02">
-            <button onClick={menuOpen} className={`header__menu-btn ${menuOpened ? "_active" : ""}`}>
+            <button
+              onClick={menuOpen}
+              className={`header__menu-btn ${menuOpened ? "_active" : ""}`}
+            >
               {!menuOpened ? (
                 <img src="/images/menu-close.svg" alt="menu-burger" />
               ) : (
@@ -67,12 +70,18 @@ const Header = () => {
             <nav className="header__nav _container">
               <ul className="header__list">
                 <li
-                  className={`header__item-menu _submenu ${submenuOpen["services"] || hoveredItem === "services" ? "_open" : ""}`}
+                  className={`header__item-menu _submenu ${
+                    submenuOpen["services"] || hoveredItem === "services"
+                      ? "_open"
+                      : ""
+                  }`}
                   onMouseEnter={() => handleMouseEnter("services")}
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className="wrapper">
-                    <Link href="/services" onClick={closeMenu}>Our Services </Link>
+                    <Link href="/services" onClick={closeMenu}>
+                      Our Services{" "}
+                    </Link>
                     <button type="button" className="btn">
                       {!submenuOpen["services"] ? (
                         <img src="/images/menu-right.svg" alt="expand" />
@@ -82,40 +91,90 @@ const Header = () => {
                     </button>
                   </div>
                   <ul
-                    className={`header__submenu ${submenuOpen["services"] || hoveredItem === "services" ? "_active" : ""}`}
+                    className={`header__submenu ${
+                      submenuOpen["services"] || hoveredItem === "services"
+                        ? "_active"
+                        : ""
+                    }`}
                     style={{
-                      maxHeight: submenuOpen["services"] || hoveredItem === "services" ? "1000px" : "0",
+                      maxHeight:
+                        submenuOpen["services"] || hoveredItem === "services"
+                          ? "1000px"
+                          : "0",
                       overflow: "hidden",
                       transition: "all 0.3s ease 0s",
-                      paddingTop: submenuOpen["services"] || hoveredItem === "services" ? "10px" : "0",
+                      paddingTop:
+                        submenuOpen["services"] || hoveredItem === "services"
+                          ? "10px"
+                          : "0",
                     }}
                   >
                     <li className="header__subitem">
-                      <Link href="/services/brand-design" onClick={closeMenu}>Brand Design</Link>
+                      <Link href="/services/brand-design" onClick={closeMenu}>
+                        Brand Design
+                      </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>Product, Service, Experience Design</Link>
+                      <Link
+                        href="/services/product-service-experience-design"
+                        onClick={closeMenu}
+                      >
+                        Product, Service, Experience Design
+                      </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>SMM</Link>
+                      <Link href="/services/content-and-brand-story-design" onClick={closeMenu}>
+                        Content and Brand Story Design
+                      </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>SEO</Link>
+                      <Link href="/services/smm" onClick={closeMenu}>
+                        SMM
+                      </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>Performance (Advertising)</Link>
+                      <Link href="/services/seo" onClick={closeMenu}>
+                        SEO
+                      </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="#" onClick={closeMenu}>Brand Scaling</Link>
+                      <Link href="/services/performance" onClick={closeMenu}>
+                        Performance (Advertising)
+                      </Link>
+                    </li>
+                    <li className="header__subitem">
+                      <Link href="/services/brand-scaling" onClick={closeMenu}>
+                        Brand Scaling
+                      </Link>
                     </li>
                   </ul>
                 </li>
 
-                <li className="header__item-menu"><Link href="#" onClick={closeMenu}>Complex Solutions</Link></li>
-                <li className="header__item-menu"><Link href="#" onClick={closeMenu}>Introducing Lyxiom</Link></li>
-                <li className="header__item-menu"><Link href="#" onClick={closeMenu}>Your Way</Link></li>
-                <li className="header__item-menu"><Link href="#" onClick={closeMenu}>Branding Courses</Link></li>
-                <li className="header__item-menu"><Link href="#" onClick={closeMenu}>Contact Us</Link></li>
+                <li className="header__item-menu">
+                  <Link href="#" onClick={closeMenu}>
+                    Complex Solutions
+                  </Link>
+                </li>
+                <li className="header__item-menu">
+                  <Link href="#" onClick={closeMenu}>
+                    Introducing Lyxiom
+                  </Link>
+                </li>
+                <li className="header__item-menu">
+                  <Link href="#" onClick={closeMenu}>
+                    Your Way
+                  </Link>
+                </li>
+                <li className="header__item-menu">
+                  <Link href="#" onClick={closeMenu}>
+                    Branding Courses
+                  </Link>
+                </li>
+                <li className="header__item-menu">
+                  <Link href="#" onClick={closeMenu}>
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>

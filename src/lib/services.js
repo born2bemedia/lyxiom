@@ -60,10 +60,10 @@ const services = [
     ],
   },
   {
-    category: "Product, Service, Experience Design",
+    category: "Product, Service, <br/>Experience <span>Design</span>",
     link: "product-service-experience-design",
     overview: {
-      title: "Service or experience as a product. Market-ready solutions.",
+      title: "Service or experience as a <br/>product. Market-ready solutions.",
       highlightsText: "Why Your Product Matters",
       highlights: [
         {
@@ -120,7 +120,7 @@ const services = [
     ],
   },
   {
-    category: "Content and Brand Story Design",
+    category: "Content and Brand <br/>Story <span>Design</span>",
     link: "content-and-brand-story-design",
     overview: {
       title: "One vision. One voice. Your brand DNA brought to life.",

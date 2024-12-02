@@ -1,15 +1,15 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 
 const usePopupStore = create((set) => ({
   orderPopupDisplay: false,
-  thanksPopupDisplay: false,
+  requestPopupDisplay: false,
   jobsPopupDisplay: false,
   serviceValue: false,
   serviceType: false,
   jobValue: false,
 
   setOrderPopupDisplay: (value) => set({ orderPopupDisplay: value }),
-  setThanksPopupDisplay: (value) => set({ thanksPopupDisplay: value }),
+  setRequestPopupDisplay: (value) => set({ requestPopupDisplay: value }),
   setJobsPopupDisplay: (value) => set({ jobsPopupDisplay: value }),
   setServiceValue: (value) => set({ serviceValue: value }),
   setServiceType: (value) => set({ serviceType: value }),

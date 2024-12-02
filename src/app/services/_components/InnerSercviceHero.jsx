@@ -1,12 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const InnerSercviceHero = ({ title, subtitle, slug }) => {
+  const [serviceClass, setServiceClass] = useState("");
+
+  useEffect(() => {
+    if (slug == "product-service-experience-design") {
+      setServiceClass("space-between-product");
+    } else if (slug == "content-and-brand-story-design") {
+      setServiceClass("space-between");
+    }
+  }, [slug]);
+
   return (
-    <section className="services-hero">
+    <section className={`services-hero ${serviceClass}`}>
       <div className="video-wrap">
         <video
           width="1442"

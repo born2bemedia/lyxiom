@@ -3,11 +3,12 @@ import { Red_Hat_Display } from "next/font/google";
 import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import RequestPopup from "@/components/RequestPopup";
 
 export const metadata = {
   title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
-  description: "Explore expert marketing solutions for building, growing, and scaling your brand. Get personalised strategies to elevate your business with measurable success.",
+  description:
+    "Explore expert marketing solutions for building, growing, and scaling your brand. Get personalised strategies to elevate your business with measurable success.",
   openGraph: {
     title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
     description:
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="site">{children}</main>
         <Footer />
+        <RequestPopup />
       </body>
     </html>
   );

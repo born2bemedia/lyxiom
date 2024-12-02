@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import RequestPopup from "@/components/RequestPopup";
+import RequestButton from "@/components/RequestButton";
 
 const HomeHero = () => {
   const [activeSlide, setActiveSlide] = useState(1); // Track active slide
@@ -30,7 +32,7 @@ const HomeHero = () => {
             <h1>
               Packing brands, <span>unpacking the future</span>
             </h1>
-            <MainButton text={"Start Your Brand"} link={"#"} />
+            <RequestButton text="Start Your Brand" />
           </div>
           <div className="col-02">
             <Swiper
