@@ -3,6 +3,7 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
+import RequestButton from "@/components/RequestButton";
 
 const WhatMeans = () => {
   return (
@@ -17,7 +18,7 @@ const WhatMeans = () => {
             className="col-01"
           >
             <h2>What Lyxiom Means</h2>
-            <MainButton text={"Start Your Brand"} link={"#"} />
+            <RequestButton text={"Start Your Brand"} />
           </motion.div>
           <div className="col-02">
             <motion.div

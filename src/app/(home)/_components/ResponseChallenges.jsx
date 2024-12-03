@@ -4,6 +4,7 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
 import ButtonArrow from "@/icons/ButtonArrow";
+import Link from "next/link";
 
 const ResponseChallenges = () => {
   return (
@@ -36,9 +37,9 @@ const ResponseChallenges = () => {
                 </p>
               </span>
             </div>
-            <span className="arrow">
+            <Link href="/services/brand-design" className="arrow">
               <ButtonArrow />
-            </span>
+            </Link>
             <p className="mobile-text">
               Crafting and positioning brands with a winning strategy,
               integrating product, service, and experience design to ensure
@@ -63,9 +64,9 @@ const ResponseChallenges = () => {
                 </p>
               </span>
             </div>
-            <span className="arrow">
+            <Link href="/services/content-and-brand-story-design" className="arrow">
               <ButtonArrow />
-            </span>
+            </Link>
             <p className="mobile-text">
               Developing targeted, data-driven content that resonates, drives
               engagement, and keeps audiences connected across all channels.
@@ -89,9 +90,9 @@ const ResponseChallenges = () => {
                 </p>
               </span>
             </div>
-            <span className="arrow">
+            <Link href="/services/smm" className="arrow">
               <ButtonArrow />
-            </span>
+            </Link>
             <p className="mobile-text">
               Developing tailored social media strategies to increase reach and
               engagement, leveraging trends and real-time data to build a loyal
@@ -116,9 +117,9 @@ const ResponseChallenges = () => {
                 </p>
               </span>
             </div>
-            <span className="arrow">
+            <Link href="/services/seo" className="arrow">
               <ButtonArrow />
-            </span>
+            </Link>
             <p className="mobile-text">
               Optimising every aspect of your brand for search, ensuring maximum
               visibility with precise, trend-driven keyword strategies and
@@ -143,16 +144,16 @@ const ResponseChallenges = () => {
                 </p>
               </span>
             </div>
-            <span className="arrow">
+            <Link href="/services/performance" className="arrow">
               <ButtonArrow />
-            </span>
+            </Link>
             <p className="mobile-text">
               Running advanced ad campaigns focused on cost efficiency and high
               ROI, adapting quickly to market changes and user behaviour trends.
             </p>
           </motion.div>
         </div>
-        <MainButton text={"Explore Services"} link={"#"} />
+        <MainButton text={"Explore Services"} link={"/services"} />
       </div>
       <div className="marquee-container">
         <span className="marquee">

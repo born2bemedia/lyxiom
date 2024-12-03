@@ -402,6 +402,7 @@
         justify-content: center;
         overflow: hidden;
         display: flex;
+        margin: 0;
         @media (max-width: rem(992)) {
           width: rem(36);
           height: rem(36);
