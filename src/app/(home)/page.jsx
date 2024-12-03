@@ -15,7 +15,7 @@ export default function Home() {
       <ResponseChallenges />
       <CtaBlock
         title={"Full-Cycle Complex Solutions Are Here"}
-        buttonLink="#"
+        buttonLink="/complex-solution"
         buttonText={"Explore Packages"}
         subtitle="Discover end-to-end solutions tailored to your needs, combining strategy, creativity, and technology."
       />

@@ -2,6 +2,8 @@ const services = [
   {
     category: "Brand <span>Design</span>",
     link: "brand-design",
+    seo_title: "Brand Design Services | Lyxiom",
+    seo_description: "Transform your brand identity with professional design services. Create a memorable and impactful brand presence with Lyxiom's expert solutions.",
     overview: {
       title: "Solid foundations. Seamless systems. Stronger brands.",
       highlightsText: "Why Your Brand Matters",
@@ -62,6 +64,8 @@ const services = [
   {
     category: "Product, Service, <br/>Experience <span>Design</span>",
     link: "product-service-experience-design",
+    seo_title: "Product, Service, Experience Design | Lyxiom",
+    seo_description: "Discover how Lyxiom's product, service, and experience design can transform your brand. Tailored solutions to elevate customer experiences.",
     overview: {
       title: "Service or experience as a <br/>product. Market-ready solutions.",
       highlightsText: "Why Your Product Matters",
@@ -122,6 +126,8 @@ const services = [
   {
     category: "Content and Brand <br/>Story <span>Design</span>",
     link: "content-and-brand-story-design",
+    seo_title: "Content and Brand Story Design | Lyxiom",
+    seo_description: "Create compelling content and a powerful brand story with Lyxiom. Let us help you build a brand narrative that resonates and drives engagement.",
     overview: {
       title: "One vision. One voice. Your brand DNA brought to life.",
       highlightsText: "Why Your Content Matters",
@@ -182,6 +188,8 @@ const services = [
   {
     category: "SMM",
     link: "smm",
+    seo_title: "Social Media Marketing | Lyxiom",
+    seo_description: "Boost your brand's visibility and engagement with targeted social media marketing strategies. Explore our expert SMM services designed for brand growth.",
     overview: {
       title: "Building visibility. Growing audiences. Driving engagement.",
       highlightsText: "Why Going Social Matters",
@@ -239,6 +247,8 @@ const services = [
   {
     category: "SEO",
     link: "seo",
+    seo_title: "SEO | Lyxiom",
+    seo_description: "Increase your online visibility and drive organic traffic with our expert SEO strategies. Discover how we can improve your search rankings.",
     overview: {
       title: "Top positions. Organic traffic. Visibility beyond the basics.",
       highlightsText: "Why Going Top Matters",
@@ -296,6 +306,8 @@ const services = [
   {
     category: "Performance",
     link: "performance",
+    seo_title: "Performance Marketing Services to Boost Your Brand | Lyxiom",
+    seo_description: "Maximise your brand's performance with targeted advertising strategies. Explore how our tailored solutions can drive results and growth.",
     overview: {
       title: "Precision targeting. Data-driven decisions. Results that scale.",
       highlightsText: "Why Brand's Performance Matters",
@@ -368,6 +380,8 @@ const services = [
   {
     category: "Brand Scaling",
     link: "brand-scaling",
+    seo_title: "Brand Scaling | Lyxiom",
+    seo_description: "Get the support you need to scale your brand effectively. Unlock growth opportunities, outperform competitors, and reach new heights with expert strategies.",
     overview: {
       title:
         "Reaching new heights. Building your presence. Achieving your potential.",

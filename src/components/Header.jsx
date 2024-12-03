@@ -151,7 +151,7 @@ const Header = () => {
                 </li>
 
                 <li className="header__item-menu">
-                  <Link href="#" onClick={closeMenu}>
+                  <Link href="/complex-solution" onClick={closeMenu}>
                     Complex Solutions
                   </Link>
                 </li>

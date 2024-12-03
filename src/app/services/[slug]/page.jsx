@@ -7,6 +7,20 @@ import InnerServicesLoop from "../_components/InnerServicesLoop";
 import OrderPopup from "@/components/OrderPopup";
 import InnerServiceWhy from "../_components/InnerServiceWhy";
 
+export async function generateMetadata({ params: { slug } }) {
+  const serviceData = services.find((service) => service.link === slug);
+
+  return {
+    title: serviceData.seo_title,
+    description: serviceData.seo_description,
+    openGraph: {
+      title: serviceData.seo_title,
+      description: serviceData.seo_description,
+      //images: "",
+    },
+  };
+}
+
 const InnerService = ({ params: { slug } }) => {
   const selectedService = services.find((service) => service.link === slug);
   return (
@@ -24,7 +38,7 @@ const InnerService = ({ params: { slug } }) => {
       <ContactBlock
         text="Not sure what your perfect fit is? <span>Explore our package offers!</span>"
         buttonText={"Complex Solutions"}
-        buttonLink={"#"}
+        buttonLink={"/complex-solution"}
         imageUrl="/images/services/contact.webp"
       />
       <OrderPopup />
