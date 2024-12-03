@@ -44,11 +44,11 @@
     position: absolute;
     z-index: 1;
     top: 0;
-    right: 0;
-    width: 60%;
+    right: calc((100% - 1142px) / 2);
+    width: 58%;
     min-height: 100vh;
     background-color: #000000e5;
-    backdrop-filter: blur(15);
+    backdrop-filter: blur(15px);
     transition: all 0.3s ease 0s;
     opacity: 0;
     visibility: hidden;
@@ -57,6 +57,7 @@
       top: 75px;
       min-height: calc(100vh - 75px);
       width: 100%;
+      right: 0;
     }
 
     &._active {
@@ -71,6 +72,8 @@
   &__list {
     @include adaptiv-value("padding-top", 94, 0, 1);
     @include adaptiv-value("padding-bottom", 94, 0, 1);
+    @include adaptiv-value("padding-left", 60, 0, 1);
+    @include adaptiv-value("padding-right", 60, 0, 1);
     position: relative;
   }
 
@@ -153,7 +156,7 @@
     @media (min-width: 992px) {
       position: absolute;
       top: 80px;
-      left: 406px;
+      left: 400px;
     }
   }
 
