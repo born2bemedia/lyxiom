@@ -356,6 +356,7 @@ body {
     height: auto;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.5;
     @media (max-width: rem(992)) {
       width: auto;
       height: 100%;
