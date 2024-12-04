@@ -252,7 +252,8 @@ body {
         color: #9276ff;
       }
     }
-    a {
+    a,
+    button {
       position: relative;
       z-index: 1;
     }
@@ -273,8 +274,8 @@ body {
   text-align: center;
   color: #ffffff;
   width: fit-content;
-  &:hover{
-    border-color: #9276FF;
+  &:hover {
+    border-color: #9276ff;
   }
   .text {
     position: relative;

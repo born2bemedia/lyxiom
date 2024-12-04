@@ -46,7 +46,7 @@ const Footer = () => {
                 <Link href="/complex-solution">Complex Solutions</Link>
               </div>
               <div>
-                <Link href="#">Branding Courses</Link>
+                <Link href="/branding-courses">Branding Courses</Link>
               </div>
               <div>
                 <Link href="/introducing-lyxiom">Introducting Lyxiom</Link>
