@@ -49,7 +49,7 @@ const Footer = () => {
                 <Link href="#">Branding Courses</Link>
               </div>
               <div>
-                <Link href="#">Introducting Lyxiom</Link>
+                <Link href="/introducing-lyxiom">Introducting Lyxiom</Link>
               </div>
             </div>
             <div className="row">

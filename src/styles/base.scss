@@ -273,9 +273,12 @@ body {
   text-align: center;
   color: #ffffff;
   width: fit-content;
+  &:hover{
+    border-color: #9276FF;
+  }
   .text {
     position: relative;
-    height: 18px;
+    height: 22px;
     overflow: hidden;
     > span {
       display: flex;
@@ -284,6 +287,7 @@ body {
       top: 0;
       position: relative;
       > span {
+        height: 22px;
         transform-style: preserve-3d;
         transition: all 0.5s;
         white-space: nowrap;
@@ -317,7 +321,7 @@ body {
   &:hover {
     .text {
       > span {
-        top: -20px;
+        top: -22px;
       }
     }
     .arrow {

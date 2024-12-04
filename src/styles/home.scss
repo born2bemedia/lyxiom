@@ -196,19 +196,26 @@
   .swiper {
     .swiper-wrapper {
       .swiper-slide {
+        height: auto;
         &.swiper-slide-active {
           > div {
             &::before {
-              background: #0e0e0e;
+              @media (max-width: rem(992)) {
+                background: #0e0e0e;
+              }
             }
           }
         }
         > div {
+          height: 100%;
           padding: rem(24) rem(24) rem(40) rem(24);
           border-radius: rem(16);
           background: linear-gradient(360deg, #000000 0%, #666666 100%);
           position: relative;
           &:hover {
+            &::before {
+              background: #0e0e0e;
+            }
             h3 {
               color: #9276ff;
             }
@@ -272,8 +279,6 @@
     }
   }
 }
-
-
 
 .response-challenges {
   margin: rem(180) 0;
