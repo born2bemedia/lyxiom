@@ -4,12 +4,23 @@ import "@/styles/header.scss";
 import Link from "next/link";
 
 const Header = () => {
+  const [scrolling, setScrolling] = useState(false);
   const [menuOpened, setMenuOpened] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState({});
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [buttonActive, setButtonActive] = useState(false);
 
   const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+      console.log("test");
+    } else {
+      setScrolling(false);
+      console.log("test1");
+    }
+  };
 
   const menuOpen = () => {
     setMenuOpened((prev) => !prev);
@@ -38,14 +49,16 @@ const Header = () => {
 
     handleResize();
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className="header">
+    <header className={scrolling ? "active header" : "header"}>
       <div className="header__container _container">
         <div className="header__body">
           <div className="header__col-01">
@@ -65,8 +78,7 @@ const Header = () => {
               )}
             </button>
           </div>
-          
-          
+
           <div className={`header__menu ${menuOpened ? "_active" : ""}`}>
             <nav className="header__nav _container">
               <ul className="header__list">
@@ -124,7 +136,10 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="header__subitem">
-                      <Link href="/services/content-and-brand-story-design" onClick={closeMenu}>
+                      <Link
+                        href="/services/content-and-brand-story-design"
+                        onClick={closeMenu}
+                      >
                         Content and Brand Story Design
                       </Link>
                     </li>
