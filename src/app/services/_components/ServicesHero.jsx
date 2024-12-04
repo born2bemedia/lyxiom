@@ -48,6 +48,14 @@ const ServicesHero = () => {
               height={311}
               width={1110}
               alt="hero"
+              className="pc"
+            />
+            <Image
+              src="/images/services/hero-mob.png"
+              height={311}
+              width={1110}
+              alt="hero"
+              className="mob"
             />
           </motion.div>
         </div>

@@ -48,6 +48,14 @@ const IntroducingHero = () => {
               height={311}
               width={1110}
               alt="hero"
+              className="pc"
+            />
+            <Image
+              src="/images/intro/hero.png"
+              height={311}
+              width={1110}
+              alt="hero"
+              className="mob"
             />
           </motion.div>
         </div>

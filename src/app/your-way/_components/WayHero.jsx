@@ -4,9 +4,9 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const ComplexHero = () => {
+const WayHero = () => {
   return (
-    <section className="complex-hero">
+    <section className="way-hero">
       <div className="video-wrap">
         <video
           width="1442"
@@ -20,14 +20,14 @@ const ComplexHero = () => {
         </video>
       </div>
       <div className="_container">
-        <div className="complex-hero__body">
+        <div className="way-hero__body">
           <motion.h1
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Complex <span>Solutions</span>
+            Your <span>Way</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -35,7 +35,7 @@ const ComplexHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-           One brand. Multiple solutions. A comprehensive approach to growth.
+            Your journey from idea to success, reimagined.
           </motion.p>
           <motion.div
             initial="hidden"
@@ -44,14 +44,14 @@ const ComplexHero = () => {
             variants={fadeInUp}
           >
             <Image
-              src="/images/complex/hero.png"
+              src="/images/way/hero.png"
               height={311}
               width={1110}
               alt="hero"
               className="pc"
             />
             <Image
-              src="/images/complex/hero-mob.png"
+              src="/images/way/hero-mob.png"
               height={311}
               width={1110}
               alt="hero"
@@ -60,13 +60,8 @@ const ComplexHero = () => {
           </motion.div>
         </div>
       </div>
-      <div className="marquee-container">
-        <span className="marquee">
-          Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom&nbsp;&nbsp;Lyxiom
-        </span>
-      </div>
     </section>
   );
 };
 
-export default ComplexHero;
+export default WayHero;
