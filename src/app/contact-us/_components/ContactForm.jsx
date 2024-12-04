@@ -175,7 +175,7 @@ const ContactForm = () => {
                       <br />
                       Thank you for choosing Lyxiom!
                     </p>
-                    <Link href="/">OK</Link>
+                    <Link href="/contact-us">OK</Link>
                   </div>
                 )}
               </Form>

@@ -21,7 +21,9 @@ export async function generateStaticParams() {
   return params;
 }
 
-export async function generateMetadata({ params: { slug, locale } }) {
+export async function generateMetadata({ params }) {
+  const awaitedParams = await params; // Await the params
+  const { slug, locale } = awaitedParams;
   const post = await getPost(slug, locale);
 
   return {
@@ -39,7 +41,9 @@ export async function generateMetadata({ params: { slug, locale } }) {
   };
 }
 
-const BlogSingle = async ({ params: { slug, locale } }) => {
+const BlogSingle = async ({ params }) => {
+  const awaitedParams = await params; // Await the params
+  const { slug, locale } = awaitedParams;
   const post = await getPost(slug, locale);
   const slugs = await getSlugs();
   const currentIndex = slugs.indexOf(slug);

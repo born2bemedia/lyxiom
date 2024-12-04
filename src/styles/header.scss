@@ -5,26 +5,31 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 36px 0 36px 0;
+
   z-index: 999;
-  transition: all 0.5s;
-  @media (max-width: 767px) {
-    padding: 20px 0;
-    border-bottom: none;
-  }
+
   &.active {
     background-color: #000000e5;
-    padding: 20px 0;
     backdrop-filter: blur(5px);
+    .header__body {
+      padding: 20px 0;
+      border: none;
+    }
   }
   &__container {
   }
 
   &__body {
+    transition: all 0.5s;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
+    padding: 30px 0 30px 0;
+    border-bottom: 1px solid #ffffff40;
+    @media (max-width: 767px) {
+      padding: 20px 0;
+    }
   }
 
   &__logo {

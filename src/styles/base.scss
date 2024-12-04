@@ -585,6 +585,9 @@ body {
           font-weight: 500;
           line-height: 1.2;
           text-align: left;
+          &:hover {
+            background: #280e8e;
+          }
         }
 
         > div {
@@ -888,6 +891,9 @@ body {
           font-weight: 500;
           line-height: 1.2;
           text-align: left;
+          &:hover {
+            background: #280e8e;
+          }
         }
       }
     }

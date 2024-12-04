@@ -421,6 +421,9 @@
       line-height: 1;
       text-align: center;
       opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
       @media (max-width: rem(992)) {
         span {
           display: none;
