@@ -22,14 +22,14 @@ export default function Home() {
       <WhatMeans />
       <CtaBlock
         title={"Branding Courses"}
-        buttonLink="#"
+        buttonLink="/branding-courses"
         buttonText={"Go Learning"}
         subtitle="Learn how to build, grow and scale your brand: market insights, brand packing lessons, expertly crafted strategies and more."
       />
       <ContactBlock
         text="Need Assistance? Contact Lyxiom!"
         buttonText="Contact Us"
-        buttonLink="#"
+        buttonLink="/contact-us"
         imageUrl="/images/home/contact.webp"
       />
     </>
