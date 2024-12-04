@@ -49,11 +49,34 @@ function OrderPopup() {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    setTimeout(() => {
+    const valuesWithService = {
+      ...values,
+      serviceVal: `${serviceValue} Request`,
+    };
+
+    try {
+      const response = await fetch("/api/emails/order", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(valuesWithService),
+      });
+
+      if (response.ok) {
+        setTimeout(() => {
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
+      }
+    } catch (error) {
+      //console.error(error);
+      setStatus({ success: false });
       setSubmitting(false);
-      resetForm();
-      setStatus({ success: true });
-    }, 400);
+    }
   };
 
   return (
@@ -93,7 +116,7 @@ function OrderPopup() {
 
                 <div className="form-wrap">
                   <Form>
-                    {!status && (
+                    {!status?.success && (
                       <div className="form-inner">
                         <h2>{serviceValue} Order</h2>
 

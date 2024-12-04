@@ -4,6 +4,7 @@ import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RequestPopup from "@/components/RequestPopup";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={redHat.className}>
+        <GoogleAnalytics gaId="G-25627GPZPG" />
         <Header />
         <main className="site">{children}</main>
         <Footer />

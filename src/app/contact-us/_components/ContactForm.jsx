@@ -16,8 +16,6 @@ const ContactForm = () => {
       .email("Please provide a valid email address")
       .required("This field is required"),
     phone: Yup.string().required("This field is required"),
-    activity: Yup.string().required("This field is required"),
-    socialMediaLink: Yup.string(),
     agree: Yup.boolean()
       .oneOf([true], "This field is required")
       .required("This field is required"),
@@ -28,9 +26,7 @@ const ContactForm = () => {
     lastName: "",
     email: "",
     phone: "",
-    activity: "",
-    socialMediaLink: "",
-    message: "",
+    inquiry: "",
     agree: false,
   };
 
@@ -38,11 +34,29 @@ const ContactForm = () => {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/emails/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.ok) {
+        setTimeout(() => {
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
+      }
+    } catch (error) {
+      //console.error(error);
+      setStatus({ success: false });
       setSubmitting(false);
-      resetForm();
-      setStatus({ success: true });
-    }, 400);
+    }
   };
   return (
     <section className="contact-form">
@@ -115,34 +129,11 @@ const ContactForm = () => {
                       />
                     </div>
 
-                    <div>
-                      <Field
-                        name="activity"
-                        type="text"
-                        placeholder="Activity"
-                        className="field"
-                      />
-                      <ErrorMessage
-                        name="activity"
-                        component="div"
-                        className="error"
-                      />
-                    </div>
-
-                    <div>
-                      <Field
-                        name="socialMediaLink"
-                        type="text"
-                        placeholder="Social Media Link"
-                        className="field"
-                      />
-                    </div>
-
                     <div className="full">
                       <Field
-                        name="message"
+                        name="inquiry"
                         type="text"
-                        placeholder="Your Message"
+                        placeholder="Your inquiry"
                         className="field"
                       />
                     </div>
