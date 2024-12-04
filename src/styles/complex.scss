@@ -174,8 +174,17 @@
       width: calc(50% - rem(20));
       background: linear-gradient(360deg, #000000 0%, #666666 100%);
       padding: 1px;
+
       @media (max-width: rem(992)) {
         width: 100%;
+      }
+      &:hover {
+        > div {
+          background: #0e0e0e;
+          button{
+            border-color: #9276FF;
+          }
+        }
       }
       > div {
         background: #080808;

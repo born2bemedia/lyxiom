@@ -178,6 +178,10 @@
         * {
           opacity: 1;
         }
+        a,
+        button {
+          border-color: #9276ff;
+        }
         > div {
           > span {
             width: rem(450);

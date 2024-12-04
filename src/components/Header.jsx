@@ -81,7 +81,7 @@ const Header = () => {
                 >
                   <div className="wrapper">
                     <Link href="/services" onClick={closeMenu}>
-                      Our Services{" "}
+                      OUR SERVICES{" "}
                     </Link>
                     <button type="button" className="btn">
                       {!submenuOpen["services"] ? (

@@ -26,7 +26,7 @@ const ComplexSolution = () => {
         text={"Need Assistance? Contact Lyxiom!"}
         buttonText={"Contact Us"}
         buttonLink={"#"}
-        imageUrl="/images/services/contact.webp"
+        imageUrl="/images/complex/contact.png"
       />
       <OrderPopup />
     </>
