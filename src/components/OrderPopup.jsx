@@ -86,7 +86,7 @@ function OrderPopup() {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, status, resetForm, setFieldValue }) => (
+        {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
           <div>
             <div
               className="overlay"
@@ -125,7 +125,11 @@ function OrderPopup() {
                             name="firstName"
                             type="text"
                             placeholder="First Name"
-                            className="field"
+                            className={
+                              touched.firstName && errors.firstName
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="firstName"
@@ -139,7 +143,11 @@ function OrderPopup() {
                             name="lastName"
                             type="text"
                             placeholder="Last Name"
-                            className="field"
+                            className={
+                              touched.lastName && errors.lastName
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="lastName"
@@ -153,7 +161,11 @@ function OrderPopup() {
                             country={"us"}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
-                            className="field"
+                            className={
+                              touched.phone && errors.phone
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="phone"
@@ -167,7 +179,11 @@ function OrderPopup() {
                             name="email"
                             type="email"
                             placeholder="Email"
-                            className="field"
+                            className={
+                              touched.email && errors.email
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="email"
@@ -181,7 +197,11 @@ function OrderPopup() {
                             name="activity"
                             type="text"
                             placeholder="Activity"
-                            className="field"
+                            className={
+                              touched.activity && errors.activity
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="activity"

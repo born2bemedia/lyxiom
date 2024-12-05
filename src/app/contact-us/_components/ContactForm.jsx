@@ -66,7 +66,7 @@ const ContactForm = () => {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ isSubmitting, status, resetForm, setFieldValue }) => (
+          {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
             <div className="form-wrap">
               <Form>
                 {!status && (
@@ -78,7 +78,11 @@ const ContactForm = () => {
                         name="firstName"
                         type="text"
                         placeholder="First Name"
-                        className="field"
+                        className={
+                          touched.firstName && errors.firstName
+                            ? "invalid"
+                            : ""
+                        }
                       />
                       <ErrorMessage
                         name="firstName"
@@ -92,7 +96,11 @@ const ContactForm = () => {
                         name="lastName"
                         type="text"
                         placeholder="Last Name"
-                        className="field"
+                        className={
+                          touched.lastName && errors.lastName
+                            ? "invalid"
+                            : ""
+                        }
                       />
                       <ErrorMessage
                         name="lastName"
@@ -106,7 +114,11 @@ const ContactForm = () => {
                         country={"us"}
                         placeholder="Phone"
                         onChange={(phone) => setFieldValue("phone", phone)}
-                        className="field"
+                        className={
+                          touched.phone && errors.phone
+                            ? "invalid"
+                            : ""
+                        }
                       />
                       <ErrorMessage
                         name="phone"
@@ -120,7 +132,11 @@ const ContactForm = () => {
                         name="email"
                         type="email"
                         placeholder="Email"
-                        className="field"
+                        className={
+                          touched.email && errors.email
+                            ? "invalid"
+                            : ""
+                        }
                       />
                       <ErrorMessage
                         name="email"

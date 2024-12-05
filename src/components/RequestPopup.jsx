@@ -20,8 +20,6 @@ function RequestPopup() {
     phone: Yup.string().required("This field is required"),
     activity: Yup.string().required("This field is required"),
     socialMediaLink: Yup.string(),
-    goal: Yup.string().required("This field is required"),
-    need: Yup.string().required("This field is required"),
     agree: Yup.boolean()
       .oneOf([true], "This field is required")
       .required("This field is required"),
@@ -83,7 +81,7 @@ function RequestPopup() {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, status, resetForm, setFieldValue }) => (
+        {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
           <div>
             <div
               className="overlay"
@@ -122,7 +120,11 @@ function RequestPopup() {
                             name="firstName"
                             type="text"
                             placeholder="First Name"
-                            className="field"
+                            className={
+                              touched.firstName && errors.firstName
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="firstName"
@@ -136,7 +138,11 @@ function RequestPopup() {
                             name="lastName"
                             type="text"
                             placeholder="Last Name"
-                            className="field"
+                            className={
+                              touched.lastName && errors.lastName
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="lastName"
@@ -150,7 +156,11 @@ function RequestPopup() {
                             country={"us"}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
-                            className="field"
+                            className={
+                              touched.phone && errors.phone
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="phone"
@@ -164,7 +174,11 @@ function RequestPopup() {
                             name="email"
                             type="email"
                             placeholder="Email"
-                            className="field"
+                            className={
+                              touched.email && errors.email
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="email"
@@ -178,7 +192,11 @@ function RequestPopup() {
                             name="activity"
                             type="text"
                             placeholder="Activity"
-                            className="field"
+                            className={
+                              touched.activity && errors.activity
+                                ? "invalid"
+                                : ""
+                            }
                           />
                           <ErrorMessage
                             name="activity"

@@ -439,8 +439,12 @@
           .error {
             position: absolute;
             left: 0;
-            color: #e74848;
+            top: 100%;
+            color: #E15353;
             font-size: rem(10);
+            font-style: italic;
+            padding-left: rem(30);
+            padding-top: rem(4);
           }
           .react-datepicker-wrapper {
             width: 100%;
@@ -460,7 +464,7 @@
             border: 1px solid #ffffff33;
             font-weight: 400;
             &.invalid {
-              border-color: #e74848;
+              border-color: #E15353;
             }
             &::placeholder {
               color: #ffffff99;
