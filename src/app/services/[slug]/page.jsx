@@ -16,7 +16,7 @@ export async function generateMetadata({ params: { slug } }) {
     openGraph: {
       title: serviceData.seo_title,
       description: serviceData.seo_description,
-      //images: "",
+      images: "https://lyxiom.com/images/meta.png",
     },
   };
 }

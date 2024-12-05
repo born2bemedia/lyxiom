@@ -12,7 +12,7 @@ export const metadata = {
     title: "Branding Courses | Lyxiom",
     description:
       "Learn essential branding skills with Lyxiom's free tutorials. From market research to social media growth, find actionable steps to build, grow, and scale your brand.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 

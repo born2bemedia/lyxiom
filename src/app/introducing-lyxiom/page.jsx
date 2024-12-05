@@ -12,7 +12,7 @@ export const metadata = {
       title: "About Us | Lyxiom",
       description:
         "Discover Lyxiom's expert-driven approach to brand development. Explore how our insights, creativity, and strategies help elevate your brand.",
-      //images: "",
+      images: "https://lyxiom.com/images/meta.png",
     },
   };
 

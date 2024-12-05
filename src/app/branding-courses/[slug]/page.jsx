@@ -32,11 +32,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.seo_title,
       description: post.seo_description,
-      images: post.thumbnail,
-      poster_desc: post.poster_desc,
-      poster_mobile: post.poster_mobile,
-      back_desc: post.back_desc,
-      back_mobile: post.back_mobile,
+      images: "https://lyxiom.com/images/meta.png",
     },
   };
 }

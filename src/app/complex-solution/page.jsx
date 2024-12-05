@@ -13,7 +13,7 @@ export const metadata = {
     title: "Complex Solutions | Lyxiom",
     description:
       "Find the perfect solution for your brand at any stage. Explore our tailored packages for startups, growing brands, and scaling businesses, or create your custom package.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 

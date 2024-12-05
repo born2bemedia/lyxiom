@@ -11,7 +11,7 @@ export const metadata = {
     title: "How We Promote Brands | Lyxiom",
     description:
       "Explore how Lyxiom turns your ideas into success with a step-by-step approach designed to meet your goals. From requests to measurable results, your brand journey starts here.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 

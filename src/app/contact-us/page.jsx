@@ -11,7 +11,7 @@ export const metadata = {
     title: "Contact Us | Lyxiom",
     description:
       "Do you have questions or need assistance? Contact Lyxium today for expert help with building, growing, and scaling your brand.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 

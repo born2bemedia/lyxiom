@@ -14,7 +14,7 @@ export const metadata = {
     title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
     description:
       "Explore expert marketing solutions for building, growing, and scaling your brand. Get personalised strategies to elevate your business with measurable success.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 

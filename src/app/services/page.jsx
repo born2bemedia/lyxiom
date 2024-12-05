@@ -12,7 +12,7 @@ export const metadata = {
     title: "Brand Marketing Services | Lyxiom",
     description:
       "Get the marketing solutions you need to build, grow, and scale your brand with proven strategies. Learn how to take your business to the next level today.",
-    //images: "",
+    images: "https://lyxiom.com/images/meta.png",
   },
 };
 
