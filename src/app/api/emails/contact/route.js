@@ -65,6 +65,11 @@ export async function POST(request) {
       `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>
+          <tr>
+              <td>
+                  <img style="width: 100%" src="https://lyxiom.com/images/email_header.png" alt="Header" />
+              </td>
+          </tr>
         </thead>
             <tbody>
                 <tr>
@@ -86,7 +91,7 @@ export async function POST(request) {
             <tfoot>
                 <tr>
                     <td style="background-color: #222222; font-weight: 600; font-family: Roboto, sans-serif;padding: 24px 0;">
-                        <p style="font-size: 20px; line-height: 24px; color: #ffffff; text-align: center;margin: 0;">Thanks for using <a href="https://lyxiom.com/" style="color: #3516B1; text-decoration: none;">Lyxiom</a></p>
+                        <p style="font-size: 20px; line-height: 24px; color: #ffffff; text-align: center;margin: 0;">Thanks for using <a href="https://lyxiom.com/" style="color: #ffffff; text-decoration: none;">Lyxiom</a></p>
                     </td>
                 </tr>
             </tfoot>
