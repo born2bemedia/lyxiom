@@ -164,9 +164,9 @@
           }
         }
         @media (max-width: rem(992)) {
-          height: rem(380);
-          width: auto;
+          width: 100%;
           max-width: unset;
+          height: auto;
         }
       }
     }

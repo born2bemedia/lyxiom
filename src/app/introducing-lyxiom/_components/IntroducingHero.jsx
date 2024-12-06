@@ -51,9 +51,9 @@ const IntroducingHero = () => {
               className="pc"
             />
             <Image
-              src="/images/intro/hero.png"
-              height={311}
-              width={1110}
+              src="/images/intro/hero-mob.png"
+              height={400}
+              width={400}
               alt="hero"
               className="mob"
             />

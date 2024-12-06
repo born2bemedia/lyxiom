@@ -6,6 +6,22 @@ import Image from "next/image";
 
 const InnerSercviceHero = ({ title, subtitle, slug }) => {
   const [serviceClass, setServiceClass] = useState("");
+  const [imageSuffix, setImageSuffix] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768; 
+      setImageSuffix(mobile ? "-mob" : "");
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (slug == "product-service-experience-design") {
@@ -52,7 +68,7 @@ const InnerSercviceHero = ({ title, subtitle, slug }) => {
             variants={fadeInUp}
           >
             <Image
-              src={`/images/services/${slug}.png`}
+              src={`/images/services/${slug}${imageSuffix}.png`}
               height={311}
               width={1110}
               alt="hero"
