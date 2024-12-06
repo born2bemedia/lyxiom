@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={redHat.className}>
         <GoogleAnalytics gaId="G-25627GPZPG" />
-        {/*<Preloader /> */}
+        <Preloader />
         <Header />
         <main className="site">{children}</main>
         <Footer />

@@ -39,7 +39,7 @@ const Preloader = () => {
       }}
     >
       <span>
-        <img width={100} src="/images/preloader.png" alt="preloader" />
+        <img width={100} src="/images/preloader.gif" alt="preloader" />
       </span>
     </div>
   );
