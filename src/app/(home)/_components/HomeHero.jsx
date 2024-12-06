@@ -14,12 +14,12 @@ const HomeHero = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/home/hero1.png",
+      image: "/images/home/hero1.webp",
       text: "Each year, 1 million new brands emerge, but only 0.001% stand the test of time.",
     },
     {
       id: 2,
-      image: "/images/home/hero2.png",
+      image: "/images/home/hero2.webp",
       text: "Meet Lyxiom: Full-cycle agency. Dynamic marketing. Building brands that win.",
     },
   ];
