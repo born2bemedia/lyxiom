@@ -41,6 +41,7 @@
         @media (max-width: rem(992)) {
           flex-wrap: wrap;
           row-gap: rem(20);
+          column-gap: rem(16);
         }
         &:last-child {
           border: none;
@@ -58,7 +59,7 @@
         > div {
           width: 25%;
           @media (max-width: rem(992)) {
-            width: 50%;
+            width: calc(50% - 8px);
           }
           span {
             color: #3516b1;
@@ -81,6 +82,92 @@
             line-height: 1.2;
             text-align: left;
           }
+        }
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    padding: rem(35) 0;
+    border-top: 1px solid #f2f2f24d;
+    @media (max-width: rem(992)) {
+      flex-direction: column;
+      gap: rem(30);
+    }
+    .col-01 {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: rem(18);
+      @media (max-width: rem(992)) {
+        width: 100%;
+        flex-direction: row;
+        gap: rem(16);
+      }
+      > div {
+        width: 100%;
+        @media (max-width: rem(992)) {
+          width: calc(50% - 8px);
+        }
+        span {
+          color: #3516b1;
+          font-size: rem(16);
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: left;
+          a {
+            color: #3516b1;
+            font-size: rem(16);
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+          }
+        }
+        > a {
+          color: #ffffff;
+          font-size: rem(16);
+          font-weight: 300;
+          line-height: 1.2;
+          text-align: left;
+        }
+      }
+    }
+    .col-02 {
+      width: 70%;
+      display: flex;
+      gap: rem(44);
+      @media (max-width: rem(992)) {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: rem(30);
+      }
+      > div {
+        width: calc(50% - 22px);
+        max-width: rem(310);
+        @media (max-width: rem(992)) {
+          width: 100%;
+          max-width: 100%;
+        }
+        span {
+          color: #3516b1;
+          font-size: rem(16);
+          font-weight: 700;
+          line-height: 1.2;
+          text-align: left;
+          a {
+            color: #3516b1;
+            font-size: rem(16);
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+          }
+        }
+        > a {
+          color: #ffffff;
+          font-size: rem(16);
+          font-weight: 300;
+          line-height: 1.2;
+          text-align: left;
         }
       }
     }

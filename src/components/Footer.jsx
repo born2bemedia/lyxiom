@@ -18,26 +18,6 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-02">
-            <div className="row">
-              <div>
-                <span>Email:</span>
-                <Link href="#">email</Link>
-              </div>
-              <div>
-                <span>Phone:</span>
-                <Link href="#">phone</Link>
-              </div>
-              <div>
-                <span>
-                  <Link href="#">Correspondence</Link>
-                </span>
-              </div>
-              <div>
-                <span>
-                  <Link href="#">Registered</Link>
-                </span>
-              </div>
-            </div>
             <div className="row main-menu">
               <div>
                 <Link href="/services">Our Services</Link>
@@ -65,6 +45,34 @@ const Footer = () => {
               <div>
                 <Link href="#">Refund Policy</Link>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer__contacts">
+          <div className="col-01">
+            <div>
+              <span>Email: </span>
+              <Link href="mailto:info@lyxiom.com">info@lyxiom.com</Link>
+            </div>
+            <div>
+              <span>Phone: </span>
+              <Link href="#">phone</Link>
+            </div>
+          </div>
+          <div className="col-02">
+            <div>
+              <span>Registered address:</span>
+              <Link href="#">
+                2nd Floor College House, 17 King Edwards Road, Ruislip, N14 6HF,
+                London, United Kingdom
+              </Link>
+            </div>
+            <div>
+              <span>Office address:</span>
+              <Link href="#">
+                Office 21, 1st floor, 286 Chase Road, N14 6HF, London, United
+                Kingdom
+              </Link>
             </div>
           </div>
         </div>
