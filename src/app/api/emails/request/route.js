@@ -76,7 +76,7 @@ export async function POST(request) {
     const clientEmailBody = makeBody(
       email, // Client email
       process.env.EMAIL_USER, // Sender (admin)
-      "Lyxiom: We’ve Received Your Request", // Subject
+      "Lyxiom: We've Received Your Request", // Subject
       `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>
@@ -90,7 +90,7 @@ export async function POST(request) {
                 <tr>
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Hi ${firstName},</h2>
-                        <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Lyxiom! We’ve received your service request and will review it promptly.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Lyxiom! We've received your service request and will review it promptly.</p>
                         <p style="font-size: 16px; line-height: 19px;">One of our experts will contact you soon to gather more details and discuss the next steps. If you have any immediate questions, please reply to this email.</p>
                         <p style="font-size: 16px; line-height: 19px;">We look forward to helping you achieve your goals!
 </p>

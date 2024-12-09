@@ -76,8 +76,8 @@ export async function POST(request) {
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Hi ${firstName},</h2>
                         <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to us!</p>
-                        <p style="font-size: 16px; line-height: 19px;">We’ve received your inquiry and are already reviewing it. One of our team members will be in touch shortly to discuss the details or provide the answers you’re looking for.</p>
-                        <p style="font-size: 16px; line-height: 19px;">We’re here to help you take the next step toward building a standout brand.</p>
+                        <p style="font-size: 16px; line-height: 19px;">We've received your inquiry and are already reviewing it. One of our team members will be in touch shortly to discuss the details or provide the answers you're looking for.</p>
+                        <p style="font-size: 16px; line-height: 19px;">We're here to help you take the next step toward building a standout brand.</p>
                         <p style="font-size: 16px; line-height: 19px;">Stay tuned—your journey begins here!</p>
                         <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
                             Best regards,

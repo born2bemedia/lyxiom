@@ -87,11 +87,11 @@ export async function POST(request) {
                 <tr>
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Dear ${firstName},</h2>
-                        <p style="font-size: 16px; line-height: 19px;">Thank you for submitting your service order! We’ve received your details and are excited to start tailoring the perfect service offer for your needs.</p>
-                        <p style="font-size: 16px; line-height: 19px;">Our team will contact you shortly to discuss your project further, clarify details, and calculate the service costs. We’ll also review additional budget requirements for services like SEO or advertising to ensure a clear and transparent process. </p>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for submitting your service order! We've received your details and are excited to start tailoring the perfect service offer for your needs.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Our team will contact you shortly to discuss your project further, clarify details, and calculate the service costs. We'll also review additional budget requirements for services like SEO or advertising to ensure a clear and transparent process. </p>
                         <p style="font-size: 16px; line-height: 19px;">Please note that advertising budgets are separate from our service costs and will be factored into the overall strategy.</p>
                         <p style="font-size: 16px; line-height: 19px;">If you have any immediate questions or additional information, please reply to this email.
-We’re looking forward to helping you achieve your goals!
+We're looking forward to helping you achieve your goals!
 </p>
                         <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
                             Best regards,
