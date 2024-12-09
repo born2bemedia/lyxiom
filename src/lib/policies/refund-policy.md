@@ -20,7 +20,7 @@ If you mistakenly transferred an amount greater than what was issued in your inv
 
 To request a refund, please follow these steps:
 
-**Submit a Refund Request**: Send your refund request to **\[\*\***Email Address\***\*\]** with the following details:
+**Submit a Refund Request**: Send your refund request to [info@lyxiom.com](mailto:info@lyxiom.com) with the following details:
 
 - Your full name
 - Transaction date
