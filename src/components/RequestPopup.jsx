@@ -50,7 +50,7 @@ function RequestPopup() {
     { setSubmitting, resetForm, setStatus }
   ) => {
     try {
-      const response = await fetch("/api/emails/order", {
+      const response = await fetch("/api/emails/request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

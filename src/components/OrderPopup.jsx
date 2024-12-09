@@ -55,7 +55,7 @@ function OrderPopup() {
     };
 
     try {
-      const response = await fetch("/api/emails/request", {
+      const response = await fetch("/api/emails/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
