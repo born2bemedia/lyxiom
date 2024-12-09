@@ -1,0 +1,56 @@
+@use "mixin" as *;
+
+.policy {
+  margin: rem(160) 0;
+  h1 {
+    color: #ffffff;
+    font-size: rem(50);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: rem(48);
+  }
+  article {
+    a {
+      color: #DDD623;
+    }
+    p {
+      color: #D0D0D0;
+      font-size: rem(16);
+      font-weight: 400;
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: rem(20);
+    }
+    h2 {
+      color: #D0D0D0;
+      font-size: rem(20);
+      margin-top: rem(30);
+      margin-bottom: rem(20);
+    }
+    ul {
+      margin-bottom: rem(20);
+      padding-left: rem(20);
+      li {
+        list-style-type: disc;
+        color: #D0D0D0;
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+    ol {
+      margin-bottom: rem(20);
+      padding-left: rem(20);
+      li {
+        list-style-type: decimal;
+        color: #D0D0D0;
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+  }
+}

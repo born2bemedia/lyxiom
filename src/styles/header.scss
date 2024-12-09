@@ -8,12 +8,29 @@
 
   z-index: 999;
 
+  &:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 1110px;
+    max-width: 100%;
+    display: block;
+    height: 1px;
+    background: #ffffff40;
+    transition: all 0.5s;
+  }
+
   &.active {
     background-color: #000000e5;
     backdrop-filter: blur(5px);
     .header__body {
       padding: 20px 0;
       border: none;
+    }
+    &::after{
+      width: 100%;
     }
   }
   &__container {
@@ -26,7 +43,7 @@
     justify-content: space-between;
     gap: 32px;
     padding: 30px 0 30px 0;
-    border-bottom: 1px solid #ffffff40;
+    //border-bottom: 1px solid #ffffff40;
     @media (max-width: 767px) {
       padding: 20px 0;
     }

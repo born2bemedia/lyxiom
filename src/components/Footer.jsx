@@ -34,16 +34,16 @@ const Footer = () => {
             </div>
             <div className="row">
               <div>
-                <Link href="#">Terms of Use</Link>
+                <Link href="/terms-of-use">Terms of Use</Link>
               </div>
               <div>
-                <Link href="#">Your Privacy</Link>
+                <Link href="/privacy-policy">Your Privacy</Link>
               </div>
               <div>
-                <Link href="#">Our Cookie</Link>
+                <Link href="/cookie-policy">Our Cookie</Link>
               </div>
               <div>
-                <Link href="#">Refund Policy</Link>
+                <Link href="/refund-policy">Refund Policy</Link>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
             <div>
               <span>Phone: </span>
-              <Link href="#">phone</Link>
+              <Link href="tel:+447449702908">+447449702908</Link>
             </div>
           </div>
           <div className="col-02">
