@@ -21,7 +21,7 @@ export async function generateStaticParams() {
   return params;
 }
 
-/*export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const awaitedParams = await params; // Await the params
   const { slug, locale } = awaitedParams;
   const post = await getPost(slug, locale);
@@ -35,7 +35,7 @@ export async function generateStaticParams() {
       images: "https://lyxiom.com/images/meta.png",
     },
   };
-}*/
+}
 
 const BlogSingle = async ({ params }) => {
   const awaitedParams = await params; // Await the params

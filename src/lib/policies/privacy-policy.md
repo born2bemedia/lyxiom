@@ -2,9 +2,9 @@
 title: "Privacy Policy"
 ---
 
-At **Luxiom LTD**, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of information we collect, how we use and share it, and the choices available to you regarding our practices. It also explains the security measures we implement to protect your data, how long we retain it, and how you can contact us for inquiries or to exercise your privacy rights.
+At **Lyxiom LTD**, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of information we collect, how we use and share it, and the choices available to you regarding our practices. It also explains the security measures we implement to protect your data, how long we retain it, and how you can contact us for inquiries or to exercise your privacy rights.
 
-**Luxiom LTD** is registered at \[Registration Address\], with company registration number \[Company Number\].
+**Lyxiom LTD** is registered at 2nd Floor College House, 17 King Edwards Road, Ruislip, N14 6HF, London, United Kingdom, with company registration number 16084429.
 
 ## **Information We Collect**
 
@@ -36,7 +36,7 @@ This information is collected through automated technologies and may be used for
 
 ## **How We Use Personal Information**
 
-At **Luxiom LTD**, we are committed to using your personal information responsibly and only for legitimate business purposes. The personal information we collect is used in the following ways:
+At **Lyxiom LTD**, we are committed to using your personal information responsibly and only for legitimate business purposes. The personal information we collect is used in the following ways:
 
 - **To provide our services**: We use your information to respond to your inquiries, process your requests, and send important updates related to our services, such as changes to our terms and policies. These actions are necessary to manage our contractual relationship with you and to comply with legal obligations.
 - **To market our services**: With your consent or where we have a legitimate interest, we may use your personal information to send you promotional materials and updates about our services.
@@ -49,7 +49,7 @@ At **Luxiom LTD**, we are committed to using your personal information responsib
 
 We take privacy seriously and will only share your personal information when necessary or as outlined below:
 
-- **Internal Company Use**: We may share your personal information within **Luxiom LTD** for internal purposes, including within teams responsible for marketing, service provision, and customer support.
+- **Internal Company Use**: We may share your personal information within **Lyxiom LTD** for internal purposes, including within teams responsible for marketing, service provision, and customer support.
 - **Service Providers**: We work with trusted service providers who perform specific functions on our behalf, such as hosting, data analytics, and customer support. These providers are only authorised to use your personal information to conduct their services and comply with applicable laws.
 - **Legal Requirements and Protection of Rights**: We may disclose your information if required by law or in response to legal processes, such as court orders or subpoenas. This may include cooperating with government agencies or law enforcement authorities domestically and internationally. We may also share information to protect our legal rights, ensure safety, or prevent illegal activities.
 - **Business Transfers**: In the event of a sale, merger, or transfer of business assets, your information may be part of the transaction, but we will ensure it remains protected under this Privacy Policy.
@@ -65,7 +65,7 @@ In some instances, government entities, courts, law enforcement agencies, or reg
 
 ## **European Economic Area Specifics**
 
-For data transfers from the EEA to non-EEA countries that are not deemed by the European Commission to provide an adequate level of data protection, **Luxiom LTD** ensures that your personal data is protected through appropriate safeguards, such as the European Commission's Standard Contractual Clauses. You can request a copy of these contractual clauses by contacting us directly.
+For data transfers from the EEA to non-EEA countries that are not deemed by the European Commission to provide an adequate level of data protection, **Lyxiom LTD** ensures that your personal data is protected through appropriate safeguards, such as the European Commission's Standard Contractual Clauses. You can request a copy of these contractual clauses by contacting us directly.
 
 ## **Your Rights and Choices**
 
@@ -86,7 +86,7 @@ If you wish to unsubscribe from our marketing communications, you can use the "U
 
 ## **Third-Party Services and Features**
 
-Our website may contain links to external services and websites for your convenience and third-party features like apps, widgets, or social media buttons (such as those from LinkedIn, Instagram, Facebook, and Twitter). These services and features are not under our control and operate independently. The privacy practices of third parties, including the information they collect, are governed by their privacy policies. **Luxiom LTD** is not responsible for these external services or features' privacy practices or data security. We encourage you to review their privacy notices to understand how they handle your data.
+Our website may contain links to external services and websites for your convenience and third-party features like apps, widgets, or social media buttons (such as those from LinkedIn, Instagram, Facebook, and Twitter). These services and features are not under our control and operate independently. The privacy practices of third parties, including the information they collect, are governed by their privacy policies. **Lyxiom LTD** is not responsible for these external services or features' privacy practices or data security. We encourage you to review their privacy notices to understand how they handle your data.
 
 ## **Retention of Personal Data**
 
@@ -104,7 +104,7 @@ We are committed to maintaining the security of your personal information and ap
 
 ## **Children's Privacy**
 
-The services provided by **Luxiom LTD** are not intended for individuals under the age of 16, and we do not knowingly collect personal information from children. If you believe a child under 18 has shared personal information with us through our website, please contact us immediately, as outlined in the "How to Contact Us" section of this Privacy Policy. We will promptly address the issue, removing such data from our records where necessary.
+The services provided by **Lyxiom LTD** are not intended for individuals under the age of 16, and we do not knowingly collect personal information from children. If you believe a child under 18 has shared personal information with us through our website, please contact us immediately, as outlined in the "How to Contact Us" section of this Privacy Policy. We will promptly address the issue, removing such data from our records where necessary.
 
 ## **Updates to Our Privacy Policy**
 
