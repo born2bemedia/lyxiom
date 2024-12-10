@@ -6,7 +6,7 @@ Lyxiom LTD provides you with this website ( "lyxiom.com," "Website") for your pe
 
 In these Terms of Use, "we" and "our" refer to Lyxiom LTD and its brand Lyxiom, and "you" and "your" refer to any individual, company, or legal entity that accesses or uses this Website.
 
-Lyxiom LTD is registered at 2nd Floor College House, 17 King Edwards Road, Ruislip, N14 6HF, London, United Kingdom, with registration number16084429.
+Lyxiom LTD is registered at 2nd Floor College House, 17 King Edwards Road, Ruislip, HA4 7AE, London, United Kingdom, with registration number16084429.
 
 ## **Acceptance of Terms of Use**
 

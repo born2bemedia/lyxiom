@@ -57,7 +57,7 @@ const ContactHero = () => {
             >
               <img src="/images/contact/address.svg" />
               <p>
-                2nd Floor College House, 17 King Edwards Road, Ruislip, N14 6HF,
+                2nd Floor College House, 17 King Edwards Road, Ruislip, HA4 7AE,
                 London, United Kingdom
               </p>
               <div className="map">
@@ -80,7 +80,7 @@ const ContactHero = () => {
             >
               <img src="/images/contact/address.svg" />
               <p>
-                Office 21, 1st floor, 286 Chase Road, N14 6HF, London, United
+                Office 21, 1st floor, 286 Chase Road, HA4 7AE, London, United
                 Kingdom
               </p>
               <div className="map">

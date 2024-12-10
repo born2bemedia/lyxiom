@@ -4,7 +4,7 @@ title: "Privacy Policy"
 
 At **Lyxiom LTD**, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of information we collect, how we use and share it, and the choices available to you regarding our practices. It also explains the security measures we implement to protect your data, how long we retain it, and how you can contact us for inquiries or to exercise your privacy rights.
 
-**Lyxiom LTD** is registered at 2nd Floor College House, 17 King Edwards Road, Ruislip, N14 6HF, London, United Kingdom, with company registration number 16084429.
+**Lyxiom LTD** is registered at 2nd Floor College House, 17 King Edwards Road, Ruislip, HA4 7AE, London, United Kingdom, with company registration number 16084429.
 
 ## **Information We Collect**
 
