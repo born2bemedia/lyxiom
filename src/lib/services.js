@@ -9,19 +9,19 @@ const services = [
       highlightsText: "Why Your Brand Matters",
       highlights: [
         {
-          stat: "3x",
+          stat: "3",
           title: "Engagement",
           description:
             "Brands with strong identity and messaging capture attention and retain audiences more effectively.",
         },
         {
-          stat: "1.7x",
+          stat: "1.7",
           title: "Higher Loyalty",
           description:
             "Consistent branding builds trust, fostering long-term customer relationships.",
         },
         {
-          stat: "2.5x",
+          stat: "2.5",
           title: "Profitability",
           description:
             "Well-crafted brands drive higher conversion rates and greater return on investment.",
@@ -71,19 +71,19 @@ const services = [
       highlightsText: "Why Your Product Matters",
       highlights: [
         {
-          stat: "4x",
+          stat: "4",
           title: "User Satisfaction",
           description:
             "Optimised products meet customer needs, improving experiences and building trust.",
         },
         {
-          stat: "2.2x",
+          stat: "2.2",
           title: "Faster Market Entry",
           description:
             "Efficient product development reduces time to launch, gaining a competitive edge.",
         },
         {
-          stat: "3x",
+          stat: "3",
           title: "Customer Retention",
           description:
             "Well-designed products ensure repeat usage and long-term loyalty.",
@@ -133,19 +133,19 @@ const services = [
       highlightsText: "Why Your Content Matters",
       highlights: [
         {
-          stat: "2.6x",
+          stat: "2.6",
           title: "Stronger Connection",
           description:
             "Tailored content builds deeper emotional ties with your audience.",
         },
         {
-          stat: "1.8x",
+          stat: "1.8",
           title: "Customer Retention",
           description:
             "Consistent and relatable brand stories foster stronger loyalty.",
         },
         {
-          stat: "3x",
+          stat: "3",
           title: "Campaign ROI",
           description:
             "Optimised and strategically planned content drives measurable profitability.",
@@ -195,17 +195,17 @@ const services = [
       highlightsText: "Why Going Social Matters",
       highlights: [
         {
-          stat: "2x",
+          stat: "2",
           title: "Audience Growth",
           description: "through targeted social media campaigns.",
         },
         {
-          stat: "1.8x",
+          stat: "1.8",
           title: "Customer Retention",
           description: "driven by consistent social engagement.",
         },
         {
-          stat: "3.5x",
+          stat: "3.5",
           title: "ROI Improvement",
           description: "with optimised social ad strategies.",
         },
@@ -254,17 +254,17 @@ const services = [
       highlightsText: "Why Going Top Matters",
       highlights: [
         {
-          stat: "5x",
+          stat: "5",
           title: "Organic Traffic",
           description: "with well-optimised content and keywords.",
         },
         {
-          stat: "2.3x",
+          stat: "2.3",
           title: "Lead Conversion Rates",
           description: "from improved SERP visibility.",
         },
         {
-          stat: "1.7x",
+          stat: "1.7",
           title: "Authority Boost",
           description: "through consistent top-ranking performance.",
         },
@@ -313,17 +313,17 @@ const services = [
       highlightsText: "Why Brand's Performance Matters",
       highlights: [
         {
-          stat: "3x",
+          stat: "3",
           title: "Return On Ad Spend",
           description: "through optimised campaigns and strategic targeting.",
         },
         {
-          stat: "4.5x",
+          stat: "4.5",
           title: "Customer Acquisition",
           description: "with tailored ad placements and messaging.",
         },
         {
-          stat: "2x",
+          stat: "2",
           title: "Conversion Rates",
           description: "driven by data-backed performance strategies.",
         },
@@ -388,18 +388,18 @@ const services = [
       highlightsText: "Why Scaling Matters",
       highlights: [
         {
-          stat: "3x",
+          stat: "3",
           title: "Audience Growth",
           description:
             "by tapping into the right strategies for individuals and small ventures.",
         },
         {
-          stat: "2.5x",
+          stat: "2.5",
           title: "Engagement Rates",
           description: "through tailored brand development and outreach.",
         },
         {
-          stat: "4x",
+          stat: "4",
           title: "Increased Visibility",
           description: "in niche markets, ensuring your brand gets noticed.",
         },

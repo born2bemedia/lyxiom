@@ -2,6 +2,7 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+import CountUpOnViewport from "@/components/CountUpOnViewport";
 
 const InnerServiceWhy = ({ highlightsText, highlights }) => {
   return (
@@ -26,7 +27,7 @@ const InnerServiceWhy = ({ highlightsText, highlights }) => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <h3>{highlight.stat}</h3>
+                <h3><CountUpOnViewport targetNumber={`${highlight.stat}`} />x</h3>
                 <h4>{highlight.title}</h4>
                 <p>{highlight.description}</p>
               </motion.div>

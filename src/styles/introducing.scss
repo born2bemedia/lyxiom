@@ -344,6 +344,11 @@
         @media (max-width: rem(992)) {
           font-size: rem(40);
         }
+        &.number {
+          width: rem(75);
+          display: inline-block;
+          text-align: center;
+        }
       }
     }
   }

@@ -82,10 +82,12 @@ const ServicesLoop = () => {
               </span>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <MainButton
-                text={service.buttonText}
-                link={`/services/${service.buttonLink}`}
-              />
+              <div className="buttons">
+                <MainButton
+                  text={service.buttonText}
+                  link={`/services/${service.buttonLink}`}
+                />
+              </div>
             </motion.div>
           ))}
         </div>

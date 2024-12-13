@@ -4,6 +4,7 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
 import RequestButton from "@/components/RequestButton";
+import CountUpOnViewport from "@/components/CountUpOnViewport";
 
 const WhatMeans = () => {
   return (
@@ -27,7 +28,10 @@ const WhatMeans = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h3>Top-10</h3>
+              <h3>
+                Top-
+                <CountUpOnViewport targetNumber={10} />
+              </h3>
               <h4>Google, Bing, Yahoo</h4>
               <p>Within the following 6 months</p>
             </motion.div>
@@ -37,7 +41,7 @@ const WhatMeans = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h3>+47%</h3>
+              <h3>+<CountUpOnViewport targetNumber={47} />%</h3>
               <h4>of Average CTR</h4>
               <p>Through learning of your audience</p>
             </motion.div>
@@ -47,7 +51,7 @@ const WhatMeans = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h3>20%+</h3>
+              <h3><CountUpOnViewport targetNumber={20} />%+</h3>
               <h4>Monthly Growth</h4>
               <p>With data and performance marketing</p>
             </motion.div>
@@ -57,7 +61,7 @@ const WhatMeans = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h3>+150%</h3>
+              <h3>+<CountUpOnViewport targetNumber={150} />%</h3>
               <h4>Organic Traffic</h4>
               <p>Through quality content and diplomacy</p>
             </motion.div>

@@ -194,6 +194,11 @@
       &:hover {
         > div {
           background: #0e0e0e;
+          .top {
+            h2{
+              color: #9276FF;
+            }
+          }
           button,
           a {
             border-color: #9276ff;

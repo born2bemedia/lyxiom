@@ -2,6 +2,7 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+import CountUpOnViewport from "@/components/CountUpOnViewport";
 
 const IntroducingSecond = () => {
   return (
@@ -9,13 +10,13 @@ const IntroducingSecond = () => {
       <div className="_container">
         <div className="introducing-second__body">
           <div>
-            <span>8</span> Industry Leaders
+          <CountUpOnViewport targetNumber={8} />  Industry Leaders
           </div>
           <div>
-            Only <span>120</span> Hours to Your Success
+            Only <span className="number"><CountUpOnViewport targetNumber={120} /></span> Hours to Your Success
           </div>
           <div>
-            <span>0</span> Chances to Fail
+          <CountUpOnViewport targetNumber={0} /> Chances to Fail
           </div>
         </div>
       </div>
