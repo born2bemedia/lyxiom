@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "@/styles/header.scss";
 import Link from "next/link";
+import LangSwitcher from "./LangSwitcher";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -67,6 +68,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="header__col-02">
+            <LangSwitcher />
             <button
               onClick={menuOpen}
               className={`header__menu-btn ${menuOpened ? "_active" : ""}`}

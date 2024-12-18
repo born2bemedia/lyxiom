@@ -1,5 +1,16 @@
 @use "mixin" as *;
 
+[lang="it"],
+[lang="de"] {
+  .home-hero {
+    .col-01 {
+      h1 {
+        font-size: rem(64);
+      }
+    }
+  }
+}
+
 .home-hero {
   padding: rem(184) 0 rem(225) 0;
   position: relative;
@@ -444,7 +455,8 @@
       justify-content: space-between;
       @media (max-width: rem(992)) {
         width: 100%;
-        a, button {
+        a,
+        button {
           display: none;
         }
       }
