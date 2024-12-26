@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params: { locale } }) {
-  const page = await getPage("terms-of-use", locale);
+  const page = await getPage("refund-policy", locale);
   const pageTitle = `${page.title} | Lyxiom`;
   return {
     title: pageTitle,
