@@ -7,8 +7,10 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
+import useCountryCode from "@/utils/useCountryCode";
 
 function RequestPopup() {
+  const countryCode = useCountryCode();
   const { requestPopupDisplay, setRequestPopupDisplay } = usePopupStore();
 
   const validationSchema = Yup.object({
@@ -153,7 +155,7 @@ function RequestPopup() {
 
                         <div>
                           <PhoneInput
-                            country={"us"}
+                            country={countryCode}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={

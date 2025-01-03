@@ -61,14 +61,14 @@ const Footer = () => {
           </div>
           <div className="col-02">
             <div>
-              <span>Registered address:</span>
+              <span>Registered address: </span>
               <Link href="#">
                 2nd Floor College House, 17 King Edwards Road, Ruislip, HA4 7AE,
                 London, United Kingdom
               </Link>
             </div>
             <div>
-              <span>Office address:</span>
+              <span>Office address: </span>
               <Link href="#">
                 Office 21, 1st floor, 286 Chase Road, LND N14 6HF, London, United
                 Kingdom

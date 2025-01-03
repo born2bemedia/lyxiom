@@ -40,14 +40,6 @@ const ContactHero = () => {
           </motion.p>
         </div>
         <div className="contact-hero__bottom">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            Addresses
-          </motion.h2>
           <div className="row">
             <motion.div
               initial="hidden"

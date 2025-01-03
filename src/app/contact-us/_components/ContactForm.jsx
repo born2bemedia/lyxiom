@@ -7,8 +7,10 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
+import useCountryCode from "@/utils/useCountryCode";
 
 const ContactForm = () => {
+  const countryCode = useCountryCode();
   const validationSchema = Yup.object({
     firstName: Yup.string().required("This field is required"),
     lastName: Yup.string().required("This field is required"),
@@ -111,7 +113,7 @@ const ContactForm = () => {
 
                     <div>
                       <PhoneInput
-                        country={"us"}
+                        country={countryCode}
                         placeholder="Phone"
                         onChange={(phone) => setFieldValue("phone", phone)}
                         className={

@@ -8,8 +8,10 @@ import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import MainButton from "./MainButton";
 import Link from "next/link";
+import useCountryCode from "@/utils/useCountryCode";
 
 function OrderPopup() {
+  const countryCode = useCountryCode();
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } =
     usePopupStore();
 
@@ -158,7 +160,7 @@ function OrderPopup() {
 
                         <div>
                           <PhoneInput
-                            country={"us"}
+                           country={countryCode}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={
