@@ -72,7 +72,7 @@ const ContactHero = () => {
             >
               <img src="/images/contact/address.svg" />
               <p>
-                Office 21, 1st floor, 286 Chase Road, LND N14 6HF, London, United
+                Office 21, 1st floor, 286 Chase Road, N14 6HF, London, United
                 Kingdom
               </p>
               <div className="map">

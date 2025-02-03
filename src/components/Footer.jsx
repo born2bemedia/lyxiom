@@ -70,7 +70,7 @@ const Footer = () => {
             <div>
               <span>Office address: </span>
               <Link href="#">
-                Office 21, 1st floor, 286 Chase Road, LND N14 6HF, London, United
+                Office 21, 1st floor, 286 Chase Road, N14 6HF, London, United
                 Kingdom
               </Link>
             </div>
