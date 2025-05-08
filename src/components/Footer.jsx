@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "@/styles/footer.scss";
 import React from "react";
-
+import Socials from "./Socials";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -16,6 +16,7 @@ const Footer = () => {
               Building Brands That <br />
               Break Through.
             </p>
+            <Socials />
           </div>
           <div className="col-02">
             <div className="row main-menu">
