@@ -121,6 +121,39 @@ const ContactHero = () => {
                 info@lyxiom.co
               </Link>
             </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              <Link href="https://www.instagram.com/lyxiomcom/">
+                <img src="/images/contact/instagram.svg" />
+                Instagram
+              </Link>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              <Link href="https://www.facebook.com/lyxiom/">
+                <img src="/images/contact/facebook.svg" />
+                Facebook
+              </Link>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              <Link href="https://x.com/lyxiom/">
+                <img src="/images/contact/x.svg" />
+                X
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>

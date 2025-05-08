@@ -98,17 +98,25 @@
     .row {
       max-width: rem(720);
       display: flex;
+      flex-wrap: wrap;
       gap: rem(32);
       margin: 0 auto;
       @media (max-width: rem(992)) {
         flex-direction: column;
       }
       > div {
-        width: calc(50% - rem(16));
+        width: calc(33.33% - rem(22));
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: rem(20);
+        &:first-child,
+        &:nth-child(2) {
+          width: calc(50% - rem(16));
+          @media (max-width: rem(992)) {
+            width: 100%;
+          }
+        }
         @media (max-width: rem(992)) {
           width: 100%;
         }
@@ -126,6 +134,9 @@
           background: #3516b1;
           border-radius: rem(15);
           justify-content: center;
+          &:hover {
+            opacity: 0.8;
+          }
         }
         p {
           color: #ffffff;
