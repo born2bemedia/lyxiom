@@ -9,6 +9,7 @@ import CheckboxIcon from "@/icons/CheckboxIcon";
 import MainButton from "./MainButton";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
+import { excludedCountries } from "@/utils/countries";
 
 function OrderPopup() {
   const countryCode = useCountryCode();
@@ -88,7 +89,14 @@ function OrderPopup() {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
+        {({
+          isSubmitting,
+          status,
+          resetForm,
+          setFieldValue,
+          touched,
+          errors,
+        }) => (
           <div>
             <div
               className="overlay"
@@ -160,13 +168,12 @@ function OrderPopup() {
 
                         <div>
                           <PhoneInput
-                           country={countryCode}
+                            country={countryCode}
+                            excludeCountries={excludedCountries}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={
-                              touched.phone && errors.phone
-                                ? "invalid"
-                                : ""
+                              touched.phone && errors.phone ? "invalid" : ""
                             }
                           />
                           <ErrorMessage
@@ -182,9 +189,7 @@ function OrderPopup() {
                             type="email"
                             placeholder="Email"
                             className={
-                              touched.email && errors.email
-                                ? "invalid"
-                                : ""
+                              touched.email && errors.email ? "invalid" : ""
                             }
                           />
                           <ErrorMessage
