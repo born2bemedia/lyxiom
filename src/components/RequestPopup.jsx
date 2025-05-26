@@ -8,6 +8,7 @@ import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
+import { excludedCountries } from "@/utils/countries";
 
 function RequestPopup() {
   const countryCode = useCountryCode();
@@ -83,7 +84,14 @@ function RequestPopup() {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
+        {({
+          isSubmitting,
+          status,
+          resetForm,
+          setFieldValue,
+          touched,
+          errors,
+        }) => (
           <div>
             <div
               className="overlay"
@@ -156,12 +164,11 @@ function RequestPopup() {
                         <div>
                           <PhoneInput
                             country={countryCode}
+                            excludeCountries={excludedCountries}
                             placeholder="Phone"
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={
-                              touched.phone && errors.phone
-                                ? "invalid"
-                                : ""
+                              touched.phone && errors.phone ? "invalid" : ""
                             }
                           />
                           <ErrorMessage
@@ -177,9 +184,7 @@ function RequestPopup() {
                             type="email"
                             placeholder="Email"
                             className={
-                              touched.email && errors.email
-                                ? "invalid"
-                                : ""
+                              touched.email && errors.email ? "invalid" : ""
                             }
                           />
                           <ErrorMessage

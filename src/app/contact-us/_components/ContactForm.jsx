@@ -8,6 +8,7 @@ import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
+import { excludedCountries } from "@/utils/countries";
 
 const ContactForm = () => {
   const countryCode = useCountryCode();
@@ -68,7 +69,14 @@ const ContactForm = () => {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {({ isSubmitting, status, resetForm, setFieldValue, touched, errors }) => (
+          {({
+            isSubmitting,
+            status,
+            resetForm,
+            setFieldValue,
+            touched,
+            errors,
+          }) => (
             <div className="form-wrap">
               <Form>
                 {!status && (
@@ -81,9 +89,7 @@ const ContactForm = () => {
                         type="text"
                         placeholder="First Name"
                         className={
-                          touched.firstName && errors.firstName
-                            ? "invalid"
-                            : ""
+                          touched.firstName && errors.firstName ? "invalid" : ""
                         }
                       />
                       <ErrorMessage
@@ -99,9 +105,7 @@ const ContactForm = () => {
                         type="text"
                         placeholder="Last Name"
                         className={
-                          touched.lastName && errors.lastName
-                            ? "invalid"
-                            : ""
+                          touched.lastName && errors.lastName ? "invalid" : ""
                         }
                       />
                       <ErrorMessage
@@ -114,12 +118,11 @@ const ContactForm = () => {
                     <div>
                       <PhoneInput
                         country={countryCode}
+                        excludeCountries={excludedCountries}
                         placeholder="Phone"
                         onChange={(phone) => setFieldValue("phone", phone)}
                         className={
-                          touched.phone && errors.phone
-                            ? "invalid"
-                            : ""
+                          touched.phone && errors.phone ? "invalid" : ""
                         }
                       />
                       <ErrorMessage
@@ -135,9 +138,7 @@ const ContactForm = () => {
                         type="email"
                         placeholder="Email"
                         className={
-                          touched.email && errors.email
-                            ? "invalid"
-                            : ""
+                          touched.email && errors.email ? "invalid" : ""
                         }
                       />
                       <ErrorMessage
