@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import usePopupStore from "@/stores/popupStore";
@@ -9,8 +9,11 @@ import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
 import { excludedCountries } from "@/utils/countries";
+import ReCaptcha from "react-google-recaptcha";
 
 const ContactForm = () => {
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
   const countryCode = useCountryCode();
   const validationSchema = Yup.object({
     firstName: Yup.string().required("This field is required"),
@@ -61,6 +64,11 @@ const ContactForm = () => {
       setSubmitting(false);
     }
   };
+
+  const handleCaptchaChange = (token) => {
+    setIsCaptchaVerified(!!token);
+  };
+
   return (
     <section className="contact-form">
       <div className="_container">
@@ -176,11 +184,14 @@ const ContactForm = () => {
                         className="error"
                       />
                     </div>
-
+                    <ReCaptcha
+                      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                      onChange={handleCaptchaChange}
+                    />
                     <button
                       type="submit"
                       className="order-button"
-                      disabled={isSubmitting}
+                      disabled={isSubmitting || !isCaptchaVerified}
                     >
                       <span>Request</span>
                     </button>
