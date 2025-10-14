@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import RequestPopup from "@/components/RequestPopup";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Preloader from "@/components/Preloader";
+import { CookiePopup } from "@/components/CookiePopup";
 
 export const metadata = {
   title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <Preloader />
         <Header />
         <main className="site">{children}</main>
+        <CookiePopup />
         <Footer />
         <RequestPopup />
       </body>
