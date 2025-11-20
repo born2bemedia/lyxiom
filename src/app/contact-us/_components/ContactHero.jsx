@@ -105,9 +105,9 @@ const ContactHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <Link href="tel:+447449702908">
+              <Link href="tel:+447460102445">
                 <img src="/images/contact/phone.svg" />
-                +447449702908
+                +447460102445
               </Link>
             </motion.div>
             <motion.div

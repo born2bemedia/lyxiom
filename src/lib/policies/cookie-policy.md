@@ -55,7 +55,7 @@ We may update this Cookie Policy from time to time to reflect changes in our pra
 If you have any questions or concerns about how we use cookies, please contact us at:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Phone**: [+447449702908](tel:+447449702908)
+- **Phone**: [+447460102445](tel:+447460102445)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 We value your privacy and strive to create the best experience for you while you explore our website. Thank you for trusting Lyxiom.
