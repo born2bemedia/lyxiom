@@ -99,7 +99,7 @@ Failure by **Lyxiom LTD** to enforce any part of these Terms of Use shall not be
 If you have any questions or suggestions regarding these Terms of Use or need further assistance, please feel free to contact us at:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Phone**: [+447449702908](tel:+447449702908)
+- **Phone**: [+447460102445](tel:+447460102445)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 We will be happy to assist you.
