@@ -7,6 +7,7 @@ import RequestPopup from "@/components/RequestPopup";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Preloader from "@/components/Preloader";
 import { CookiePopup } from "@/components/CookiePopup";
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata = {
   title: "Marketing Services for Growing and Scaling Your Brand | Lyxiom",
@@ -29,13 +30,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={redHat.className}>
-        <GoogleAnalytics gaId="G-25627GPZPG" />
-        <Preloader />
-        <Header />
-        <main className="site">{children}</main>
-        <CookiePopup />
-        <Footer />
-        <RequestPopup />
+        <NextIntlClientProvider>
+          <GoogleAnalytics gaId="G-25627GPZPG" />
+          <Preloader />
+          <Header />
+          <main className="site">{children}</main>
+          <CookiePopup />
+          <Footer />
+          <RequestPopup />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

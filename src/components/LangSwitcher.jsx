@@ -1,35 +1,23 @@
 import Script from "next/script";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 
 const LangSwitcher = () => {
-  const [currentLang, setCurrentLang] = useState("EN");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleLanguageChange = (language, languageCode) => {
-    const retryDispatchEvent = (attempts = 10) => {
-      const select = document.querySelector(".goog-te-combo");
-      if (select) {
-        select.value = language;
-        const changeEvent = new Event("change", {
-          bubbles: true,
-          cancelable: true,
-        });
-        select.dispatchEvent(changeEvent);
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
-        if (document.documentElement.lang === language || attempts <= 1) {
-          setCurrentLang(languageCode); 
-          setIsDropdownOpen(false); 
-          return;
-        }
-      }
+  const currentLang = locale.toUpperCase();
 
-      if (attempts > 1) {
-        setTimeout(() => retryDispatchEvent(attempts - 1), 100);
-      }
-    };
-
-    retryDispatchEvent();
-  };
+  const handleLanguageChange = useCallback(
+    (newLocale) => {
+      router.replace(pathname, { locale: newLocale });
+    },
+    [router, pathname],
+  );
 
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
@@ -107,20 +95,6 @@ const LangSwitcher = () => {
           </li>
         </ul>
       )}
-
-      <Script
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        onLoad={() => {
-          const googleTranslateElementInit = () => {
-            new window.google.translate.TranslateElement(
-              { pageLanguage: "en" },
-              "google_translate_element"
-            );
-          };
-          window.googleTranslateElementInit = googleTranslateElementInit;
-        }}
-      />
-      <div id="google_translate_element" style={{ display: "none" }}></div>
     </div>
   );
 };
