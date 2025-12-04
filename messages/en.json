@@ -1,1 +1,186 @@
-{}
+{
+  "home": {
+    "hero": {
+      "slides": {
+        "0": "Each year, 1 million new brands emerge, but only 0.001% stand the test of time.",
+        "1": "Meet Lyxiom: Full-cycle agency. Dynamic marketing. Building brands that win."
+      },
+      "title": {
+        "0": "Packing brands",
+        "1": "unpacking the future"
+      },
+      "button": "Start Your Brand"
+    },
+    "changes": {
+      "title": {
+        "0": "2025 Changes",
+        "1": "the Rules"
+      },
+      "slides": {
+        "0": {
+          "title": {
+            "0": "PC Costs",
+            "1": "Soar"
+          },
+          "description": "Lead costs in PPC campaigns have risen over 40%, making them less effective for new projects. Diversifying beyond paid ads is crucial."
+        },
+        "1": {
+          "title": {
+            "0": "Data for",
+            "1": "Engagement:"
+          },
+          "description": "Engaging users now demands detailed data analysis and targeted content. Basic tactics no longer suffice."
+        },
+        "2": {
+          "title": {
+            "0": "Essential",
+            "1": "Tech"
+          },
+          "description": "AI and automation tools are now standard for efficient marketing. Without them, staying competitive is impossible."
+        },
+        "3": {
+          "title": {
+            "0": "Continuous",
+            "1": "Learning Needed"
+          },
+          "description": "Success requires ongoing education and partnerships with experts to keep up with trends and best practices."
+        }
+      }
+    },
+    "response": {
+      "title": "Lyxiom Response to New Challenges",
+      "cards": {
+        "0": {
+          "title": "Brand Packing",
+          "description": "Crafting and positioning brands with a winning strategy, integrating product, service, and experience design to ensure impactful market entry and growth."
+        },
+        "1": {
+          "title": "Content Design",
+          "description": "Developing targeted, data-driven content that resonates, drives engagement, and keeps audiences connected across all channels."
+        },
+        "2": {
+          "title": "SMM",
+          "description": "Developing tailored social media strategies to increase reach and engagement, leveraging trends and real-time data to build a loyal following."
+        },
+        "3": {
+          "title": "SEO",
+          "description": "Optimising every aspect of your brand for search, ensuring maximum visibility with precise, trend-driven keyword strategies and technical excellence."
+        },
+        "4": {
+          "title": "Performance",
+          "description": "Running advanced ad campaigns focused on cost efficiency and high ROI, adapting quickly to market changes and user behaviour trends."
+        }
+      }
+    },
+    "cta1": {
+      "title": "Full-Cycle Complex Solutions Are Here",
+      "button": "Explore Packages",
+      "subtitle": "Discover end-to-end solutions tailored to your needs, combining strategy, creativity, and technology."
+    },
+    "whatMeans": {
+      "title": "What Lyxiom Means",
+      "button": "Start Your Brand",
+      "cards": {
+        "0": {
+          "title": "Top",
+          "description": "Google, Bing, Yahoo",
+          "subtitle": "Within the following 6 months"
+        },
+        "1": {
+          "description": "of Average CTR",
+          "subtitle": "Through learning of your audience"
+        },
+        "2": {
+          "description": "Monthly Growth",
+          "subtitle": "With data and performance marketing"
+        },
+        "3": {
+          "description": "Organic Traffic",
+          "subtitle": "Through quality content and diplomacy"
+        }
+      }
+    },
+    "cta2": {
+      "title": "Branding Courses",
+      "button": "Go Learning",
+      "subtitle": "Learn how to build, grow and scale your brand: market insights, brand packing lessons, expertly crafted strategies and more."
+    },
+    "contact": {
+      "text": "Need Assistance? Contact Lyxiom!",
+      "buttonText": "Contact Us"
+    }
+  },
+  "requestPopup": {
+    "errors": {
+      "required": "This field is required",
+      "email": "Please provide a valid email address"
+    },
+    "title": "LET'S START YOUR BRAND",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "activity": "Activity",
+      "socialMediaLink": "Social Media Link",
+      "goal": "Goal",
+      "need": "Need",
+      "message": "Your Message",
+      "complexApproach": "Complex Approach",
+      "specificSolution": "Specific Solution",
+      "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+    },
+    "yourGoal": "Your Goal:",
+    "start": "Start",
+    "growth": "Growth",
+    "scale": "Scale",
+    "iNeed": "I need:",
+    "request": "Request",
+    "success": {
+      "title": "Submission successful!",
+      "description": {
+        "0": "We’ll review your request and get back to you soon.",
+        "1": "Thank you for choosing Lyxiom!"
+      },
+      "button": "OK"
+    }
+  },
+  "header": {
+    "menu": {
+      "ourServices": "OUR SERVICES",
+      "brandDesign": "Brand Design",
+      "productServiceExperienceDesign": "Product, Service, Experience Design",
+      "contentAndBrandStoryDesign": "Content and Brand Story Design",
+      "smm": "SMM",
+      "seo": "SEO",
+      "performance": "Performance (Advertising)",
+      "brandScaling": "Brand Scaling",
+      "complexSolutions": "Complex Solutions",
+      "introducingLyxiom": "Introducing Lyxiom",
+      "yourWay": "Your Way",
+      "brandingCourses": "Branding Courses",
+      "contactUs": "Contact Us"
+    }
+  },
+  "footer": {
+    "description": {
+      "0": "Building Brands That",
+      "1": "Break Through."
+    },
+    "menu": {
+      "ourServices": "Our Services",
+      "complexSolutions": "Complex Solutions",
+      "brandingCourses": "Branding Courses",
+      "introducingLyxiom": "Introducing Lyxiom",
+      "termsOfUse": "Terms of Use",
+      "yourPrivacy": "Your Privacy",
+      "ourCookie": "Our Cookie",
+      "refundPolicy": "Refund Policy"
+    },
+    "email": "Email:",
+    "phone": "Phone:",
+    "registeredAddress": "Registered address:",
+    "officeAddress": "Office address:",
+    "copyright": "All rights safeguarded. Every idea, every design — protected."
+  }
+}

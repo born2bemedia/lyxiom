@@ -7,20 +7,23 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import RequestPopup from "@/components/RequestPopup";
 import RequestButton from "@/components/RequestButton";
+import { useTranslations } from "next-intl";
 
 const HomeHero = () => {
   const [activeSlide, setActiveSlide] = useState(1); // Track active slide
+
+  const t = useTranslations("home.hero");
 
   const slides = [
     {
       id: 1,
       image: "/images/home/hero1.webp",
-      text: "Each year, 1 million new brands emerge, but only 0.001% stand the test of time.",
+      text: t("slides.0", {fallback: "Each year, 1 million new brands emerge, but only 0.001% stand the test of time."}),
     },
     {
       id: 2,
       image: "/images/home/hero2.webp",
-      text: "Meet Lyxiom: Full-cycle agency. Dynamic marketing. Building brands that win.",
+      text: t("slides.1", {fallback: "Meet Lyxiom: Full-cycle agency. Dynamic marketing. Building brands that win."}),
     },
   ];
 
@@ -30,9 +33,9 @@ const HomeHero = () => {
         <div className="home-hero__body">
           <div className="col-01">
             <h1>
-              Packing brands, <span>unpacking the future</span>
+              {t('title.0', {fallback: "Packing brands"})}, <span>{t('title.1', {fallback: "unpacking the future"})}</span>
             </h1>
-            <RequestButton text="Start Your Brand" />
+            <RequestButton text={t('button', {fallback: "Start Your Brand"})} />
           </div>
           <div className="col-02">
             <Swiper
