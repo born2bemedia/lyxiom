@@ -4,6 +4,7 @@ import ComplexHero from "./_components/ComplexHero";
 import ContactBlock from "@/components/ContactBlock";
 import PackagesLoop from "./_components/PackagesLoop";
 import OrderPopup from "@/components/OrderPopup";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "Complex Solutions | Lyxiom",
@@ -18,13 +19,15 @@ export const metadata = {
 };
 
 const ComplexSolution = () => {
+  const t = useTranslations("complexSolution.contact");
+
   return (
     <>
       <ComplexHero />
       <PackagesLoop />
       <ContactBlock
-        text={"Need Assistance? Contact Lyxiom!"}
-        buttonText={"Contact Us"}
+        text={t('text', {fallback: "Need Assistance? Contact Lyxiom!"})}
+        buttonText={t('buttonText', {fallback: "Contact Us"})}
         buttonLink={"/contact-us"}
         imageUrl="/images/complex/contact.png"
       />
