@@ -3,8 +3,11 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const IntroducingHero = () => {
+  const t = useTranslations("introducing.hero");
+
   return (
     <section className="introducing-hero">
       <div className="video-wrap">
@@ -27,7 +30,7 @@ const IntroducingHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Introducing <span>Lyxiom</span>
+            {t('title', {fallback: "Introducing"})}<span>Lyxiom</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -35,7 +38,7 @@ const IntroducingHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            A new perspective on success, crafted just for you.
+            {t('description', {fallback: "A new perspective on success, crafted just for you."})}
           </motion.p>
           <motion.div
             initial="hidden"

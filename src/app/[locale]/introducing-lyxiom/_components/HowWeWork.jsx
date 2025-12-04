@@ -8,8 +8,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import MainButton from "@/components/MainButton";
 import RequestButton from "@/components/RequestButton";
+import { useTranslations } from "next-intl";
 
 const HowWeWork = () => {
+  const t = useTranslations("introducing.howWeWork");
+
   return (
     <section className="how-work">
       <div className="marquee-container">
@@ -24,7 +27,7 @@ const HowWeWork = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          How We Work
+          {t('title', {fallback: "How We Work"})}
         </motion.h2>
         <Swiper
           spaceBetween={36}
@@ -52,15 +55,13 @@ const HowWeWork = () => {
             >
               <span className="number">01</span>
               <h3>
-                Reframing
+                {t('cards.0.title.0', {fallback: "Reframing"})}
                 <br />
-                Perspectives
+                {t('cards.0.title.1', {fallback: "Perspectives"})}
               </h3>
               <span className="divider"></span>
               <p>
-                Every challenge starts with a fresh lens. Our insights-driven
-                approach uncovers new ways to understand your customers and
-                redefine your brand’s opportunities.
+                {t('cards.0.description', {fallback: "Every challenge starts with a fresh lens. Our insights-driven approach uncovers new ways to understand your customers and redefine your brand’s opportunities."})}
               </p>
             </motion.div>
           </SwiperSlide>
@@ -74,13 +75,12 @@ const HowWeWork = () => {
             >
               <span className="number">02</span>
               <h3>
-                Commercially <br />
-                Driven Thinking
+                {t('cards.1.title.0', {fallback: "Commercially"})} <br />
+                {t('cards.1.title.1', {fallback: "Driven Thinking"})}
               </h3>
               <span className="divider"></span>
               <p>
-                We refocus your brand to deliver profit, value, and lasting
-                impact—because enthusiasm alone won't sustain success.
+                {t('cards.1.description', {fallback: "We refocus your brand to deliver profit, value, and lasting impact—because enthusiasm alone won't sustain success."})}
               </p>
             </motion.div>
           </SwiperSlide>
@@ -94,14 +94,13 @@ const HowWeWork = () => {
             >
               <span className="number">03</span>
               <h3>
-                Innovative
+                {t('cards.2.title.0', {fallback: "Innovative"})}
                 <br />
-                Experimentation
+                {t('cards.2.title.1', {fallback: "Experimentation"})}
               </h3>
               <span className="divider"></span>
               <p>
-                We embrace cutting-edge technologies and challenge conventional
-                norms to explore what’s next for your business.
+                {t('cards.2.description', {fallback: "We embrace cutting-edge technologies and challenge conventional norms to explore what’s next for your business."})}
               </p>
             </motion.div>
           </SwiperSlide>
@@ -115,20 +114,18 @@ const HowWeWork = () => {
             >
               <span className="number">04</span>
               <h3>
-                Meticulous <br />
-                Craftsmanship
+                {t('cards.3.title.0', {fallback: "Meticulous"})} <br />
+                {t('cards.3.title.1', {fallback: "Craftsmanship"})}
               </h3>
               <span className="divider"></span>
               <p>
-                Success requires ongoing education and partnerships with experts
-                to keep up with trends and best practices.
+                {t('cards.3.description', {fallback: "Success requires ongoing education and partnerships with experts to keep up with trends and best practices."})}
               </p>
             </motion.div>
           </SwiperSlide>
         </Swiper>
-
         <div className="button-wrap">
-          <RequestButton text={"Let’s Start Your Brand"} />
+          <RequestButton text={t('button', {fallback: "Let’s Start Your Brand"})} />
         </div>
       </div>
     </section>

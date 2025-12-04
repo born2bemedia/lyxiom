@@ -255,5 +255,53 @@
       },
       "button": "Let’s Start Your Brand"
     }
+  },
+  "introducing": {
+    "hero": {
+      "title": "Introducing",
+      "description": "A new perspective on success, crafted just for you."
+    },
+    "second": {
+      "title": "Industry Leaders",
+      "subtitle": {
+        "0": "Only",
+        "1": "Hours to Your Success"
+      },
+      "subtitle2": "Chances to Fail"
+    },
+    "howWeWork": {
+      "title": "How We Work",
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Reframing",
+            "1": "Perspectives"
+          },
+          "description": "Every challenge starts with a fresh lens. Our insights-driven approach uncovers new ways to understand your customers and redefine your brand’s opportunities."
+        },
+        "1": {
+          "title": {
+            "0": "Commercially",
+            "1": "Driven Thinking"
+          },
+          "description": "We refocus your brand to deliver profit, value, and lasting impact—because enthusiasm alone won't sustain success."
+        },
+        "2": {
+          "title": {
+            "0": "Innovative",
+            "1": "Experimentation"
+          },
+          "description": "We embrace cutting-edge technologies and challenge conventional norms to explore what’s next for your business."
+        },
+        "3": {
+          "title": {
+            "0": "Meticulous",
+            "1": "Craftsmanship"
+          },
+          "description": "Success requires ongoing education and partnerships with experts to keep up with trends and best practices."
+        }
+      },
+      "button": "Let’s Start Your Brand"
+    }
   }
 }
