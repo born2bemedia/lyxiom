@@ -3,8 +3,11 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import RequestButton from "@/components/RequestButton";
+import { useTranslations } from "next-intl";
 
 const Steps = () => {
+  const t = useTranslations("yourWay.steps");
+
   return (
     <section className="steps">
       <div className="_container">
@@ -19,10 +22,10 @@ const Steps = () => {
             <img src="/images/way/step1.svg" />
             <div>
               <h3>
-                <span>Step 1:</span>
-                Your Vision, Our Start
+                <span>{t('cards.0.title.0', {fallback: "Step 1:"})}</span>
+                {t('cards.0.title.1', {fallback: "Your Vision, Our Start"})}
               </h3>
-              <p>You send us a request, and the journey begins.</p>
+              <p>{t('cards.0.description', {fallback: "You send us a request, and the journey begins."})}</p>
             </div>
           </motion.div>
           <motion.div
@@ -35,12 +38,12 @@ const Steps = () => {
             <img src="/images/way/step2.svg" />
             <div>
               <h3>
-                <span>Step 2:</span>
-                Getting to Know You
+                <span>{t('cards.1.title.0', {fallback: "Step 2:"})}</span>
+                {t('cards.1.title.1', {fallback: "Getting to Know You"})}
               </h3>
               <p>
-                Our team reaches out to gather essential details <br />
-                about your needs, goals, and challenges.
+                {t('cards.1.description.0', {fallback: "Our team reaches out to gather essential details"})} <br />
+                {t('cards.1.description.1', {fallback: "about your needs, goals, and challenges."})}
               </p>
             </div>
           </motion.div>
@@ -54,12 +57,12 @@ const Steps = () => {
             <img src="/images/way/step3.svg" />
             <div>
               <h3>
-                <span>Step 3:</span>
-                Tailored Expertise Assembled
+                <span>{t('cards.2.title.0', {fallback: "Step 3:"})}</span>
+                {t('cards.2.title.1', {fallback: "Tailored Expertise Assembled"})}
               </h3>
               <p>
-                We build a dedicated team and assign tasks to <br />
-                match your vision.
+                {t('cards.2.description.0', {fallback: "We build a dedicated team and assign tasks to"})} <br />
+                {t('cards.2.description.1', {fallback: "match your vision."})}
               </p>
             </div>
           </motion.div>
@@ -73,12 +76,12 @@ const Steps = () => {
             <img src="/images/way/step4.svg" />
             <div>
               <h3>
-                <span>Step 4:</span>
-                Insightful Research
+                <span>{t('cards.3.title.0', {fallback: "Step 4:"})}</span>
+                {t('cards.3.title.1', {fallback: "Insightful Research"})}
               </h3>
               <p>
-                From market analysis to customer insights, we <br />
-                uncover data to inform your solution.
+                {t('cards.3.description.0', {fallback: "From market analysis to customer insights, we"})} <br />
+                {t('cards.3.description.1', {fallback: "uncover data to inform your solution."})}
               </p>
             </div>
           </motion.div>
@@ -92,12 +95,12 @@ const Steps = () => {
             <img src="/images/way/step5.svg" />
             <div>
               <h3>
-                <span>Step 5:</span>
-                Custom Solutions Delivered
+                <span>{t('cards.4.title.0', {fallback: "Step 5:"})}</span>
+                {t('cards.4.title.1', {fallback: "Custom Solutions Delivered"})}
               </h3>
               <p>
-                We craft and share a bespoke solution, <br />
-                refining it together to achieve perfection.
+                {t('cards.4.description.0', {fallback: "We craft and share a bespoke solution,"})} <br />
+                {t('cards.4.description.1', {fallback: "refining it together to achieve perfection."})}
               </p>
             </div>
           </motion.div>
@@ -111,18 +114,18 @@ const Steps = () => {
             <img src="/images/way/step6.svg" />
             <div>
               <h3>
-                <span>Step 6:</span>
-                IResults That Matter
+                <span>{t('cards.5.title.0', {fallback: "Step 6:"})}</span>
+                {t('cards.5.title.1', {fallback: "Results That Matter"})}
               </h3>
               <p>
-                With your solution in action, we track outcomes <br />
-                and ensure measurable success.
+                {t('cards.5.description.0', {fallback: "With your solution in action, we track outcomes"})} <br />
+                {t('cards.5.description.1', {fallback: "and ensure measurable success."})}
               </p>
             </div>
           </motion.div>
         </div>
         <div className="button-wrap">
-          <RequestButton text={"Let’s Start Your Brand"} />
+          <RequestButton text={t('button', {fallback: "Let’s Start Your Brand"})} />
         </div>
       </div>
     </section>

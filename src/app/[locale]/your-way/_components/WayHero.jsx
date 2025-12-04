@@ -3,8 +3,11 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const WayHero = () => {
+  const t = useTranslations("yourWay.hero");
+
   return (
     <section className="way-hero">
       <div className="video-wrap">
@@ -27,7 +30,7 @@ const WayHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Your <span>Way</span>
+            {t('title.0', {fallback: "Your"})} <span>{t('title.1', {fallback: "Way"})}</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -35,7 +38,7 @@ const WayHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Your journey from idea to success, reimagined.
+            {t('description', {fallback: "Your journey from idea to success, reimagined."})}
           </motion.p>
           <motion.div
             initial="hidden"

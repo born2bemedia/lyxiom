@@ -127,10 +127,12 @@
       "need": "Need",
       "message": "Your Message",
       "complexApproach": "Complex Approach",
-      "specificSolution": "Specific Solution",
-      "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+      "specificSolution": "Specific Solution"
     },
+    "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy.",
     "yourGoal": "Your Goal:",
+    "specificSolution": "Specific Solution",
+    "complexApproach": "Complex Approach",
     "start": "Start",
     "growth": "Growth",
     "scale": "Scale",
@@ -182,5 +184,76 @@
     "registeredAddress": "Registered address:",
     "officeAddress": "Office address:",
     "copyright": "All rights safeguarded. Every idea, every design — protected."
+  },
+  "yourWay": {
+    "hero": {
+      "title": {
+        "0": "Your",
+        "1": "Way"
+      },
+      "description": "Your journey from idea to success, reimagined."
+    },
+    "steps": {
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Step 1:",
+            "1": "Your Vision, Our Start"
+          },
+          "description": "You send us a request, and the journey begins."
+        },
+        "1": {
+          "title": {
+            "0": "Step 2:",
+            "1": "Getting to Know You"
+          },
+          "description": {
+            "0": "Our team reaches out to gather essential details",
+            "1": "about your needs, goals, and challenges."
+          }
+        },
+        "2": {
+          "title": {
+            "0": "Step 3:",
+            "1": "Tailored Expertise Assembled"
+          },
+          "description": {
+            "0": "We build a dedicated team and assign tasks to",
+            "1": "match your vision."
+          }
+        },
+        "3": {
+          "title": {
+            "0": "Step 4:",
+            "1": "Insightful Research"
+          },
+          "description": {
+            "0": "From market analysis to customer insights, we",
+            "1": "uncover data to inform your solution."
+          }
+        },
+        "4": {
+          "title": {
+            "0": "Step 5:",
+            "1": "Custom Solutions Delivered"
+          },
+          "description": {
+            "0": "We craft and share a bespoke solution,",
+            "1": "refining it together to achieve perfection."
+          }
+        },
+        "5": {
+          "title": {
+            "0": "Step 6:",
+            "1": "Results That Matter"
+          },
+          "description": {
+            "0": "With your solution in action, we track outcomes",
+            "1": "and ensure measurable success."
+          }
+        }
+      },
+      "button": "Let’s Start Your Brand"
+    }
   }
 }
