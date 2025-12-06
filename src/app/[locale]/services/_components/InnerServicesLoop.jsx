@@ -4,8 +4,11 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
 import OrderButton from "@/components/OrderButton";
+import { useTranslations } from "next-intl";
 
 const InnerServicesLoop = ({ innerServices }) => {
+  const t = useTranslations("orderButton");
+
   return (
     <section className="services-loop">
       <div className="_container">
@@ -24,7 +27,7 @@ const InnerServicesLoop = ({ innerServices }) => {
               </span>
               <h3>{service.name}</h3>
               <p>{service.description}</p>
-              <OrderButton text={"Order Now"} serviceName={service.name} />
+              <OrderButton text={t('text', {fallback: "Order Now"})} serviceName={service.name} />
             </motion.div>
           ))}
         </div>

@@ -3,67 +3,72 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
+import { useTranslations } from "next-intl";
 
-const services = [
+const getServices = (t) => [
   {
     id: 1,
-    title: "Brand Design",
+    title: t('cards.0.title', {fallback: "Brand Design"}),
     description:
-      "A strong brand starts with research and strategy. We deliver market insights, target audience analysis, and core brand concepts, laying the groundwork for impactful growth.",
-    buttonText: "Start",
+      t('cards.0.description', {fallback: "A strong brand starts with research and strategy. We deliver market insights, target audience analysis, and core brand concepts, laying the groundwork for impactful growth."}),
+    buttonText: t('cards.0.buttonText', {fallback: "Start"}),
     buttonLink: "brand-design",
   },
   {
     id: 2,
-    title: "Product, Service, Experience Design",
+    title: t('cards.1.title', {fallback: "Product, Service, Experience Design"}),
     description:
-      "Products and services gain value through intuitive design and purposeful interactions. Using user research and behavioural insights, we create solutions that connect seamlessly with your audience.",
-    buttonText: "Invent",
+      t('cards.1.description', {fallback: "Products and services gain value through intuitive design and purposeful interactions. Using user research and behavioural insights, we create solutions that connect seamlessly with your audience."}),
+    buttonText: t('cards.1.buttonText', {fallback: "Invent"}),
     buttonLink: "product-service-experience-design",
   },
   {
     id: 3,
-    title: "Content and Brand Story Design",
+    title: t('cards.2.title', {fallback: "Content and Brand Story Design"}),
     description:
-      "Every brand has a story. Through tailored narratives, structured messaging, and creative execution, we shape a cohesive voice that aligns with your goals and audience.",
-    buttonText: "Create",
+      t('cards.2.description', {fallback: "Every brand has a story. Through tailored narratives, structured messaging, and creative execution, we shape a cohesive voice that aligns with your goals and audience."}),
+    buttonText: t('cards.2.buttonText', {fallback: "Create"}),
     buttonLink: "content-and-brand-story-design",
   },
   {
     id: 4,
-    title: "Social Media Management",
+    title: t('cards.3.title', {fallback: "Social Media Management"}),
     description:
-      "Effective social media presence requires consistency and relevance. We provide platform-specific strategies, content creation, and audience engagement tailored to your goals.",
-    buttonText: "Go Social",
+      t('cards.3.description', {fallback: "Effective social media presence requires consistency and relevance. We provide platform-specific strategies, content creation, and audience engagement tailored to your goals."}),
+    buttonText: t('cards.3.buttonText', {fallback: "Go Social"}),
     buttonLink: "smm",
   },
   {
     id: 5,
-    title: "Search Engine Optimization",
+    title: t('cards.4.title', {fallback: "Search Engine Optimization"}),
     description:
-      "Visibility in search is built on precision. Our approach integrates technical improvements, keyword research, and content alignment to elevate your discoverability.",
-    buttonText: "Go Top",
+      t('cards.4.description', {fallback: "Visibility in search is built on precision. Our approach integrates technical improvements, keyword research, and content alignment to elevate your discoverability."}),
+    buttonText: t('cards.4.buttonText', {fallback: "Go Top"}),
     buttonLink: "seo",
   },
   {
     id: 6,
-    title: "Performance",
+    title: t('cards.5.title', {fallback: "Performance"}),
     description:
-      "Advertising success relies on data and adaptability. We deliver precise audience segmentation, real-time adjustments, and optimised campaigns for impactful results.",
-    buttonText: "Advertise",
+      t('cards.5.description', {fallback: "Advertising success relies on data and adaptability. We deliver precise audience segmentation, real-time adjustments, and optimised campaigns for impactful results."}),
+    buttonText: t('cards.5.buttonText', {fallback: "Advertise"}),
     buttonLink: "performance",
   },
   {
     id: 7,
-    title: "Brand Scaling",
+    title: t('cards.6.title', {fallback: "Brand Scaling"}),
     description:
-      "Sustainable growth comes from strategy and adaptability. We focus on operational efficiency, audience expansion, and innovative solutions to help your brand reach new heights.",
-    buttonText: "Scale",
+      t('cards.6.description', {fallback: "Sustainable growth comes from strategy and adaptability. We focus on operational efficiency, audience expansion, and innovative solutions to help your brand reach new heights."}),
+    buttonText: t('cards.6.buttonText', {fallback: "Scale"}),
     buttonLink: "brand-scaling",
   },
 ];
 
 const ServicesLoop = () => {
+  const t = useTranslations("services.loop");
+
+  const services = getServices(t);
+
   return (
     <section className="services-loop">
       <div className="_container">
