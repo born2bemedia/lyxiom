@@ -3,8 +3,11 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const CoursesHero = () => {
+  const t = useTranslations("brandingCourses.hero");
+
   return (
     <section className="courses-hero">
       <div className="video-wrap">
@@ -27,7 +30,7 @@ const CoursesHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Branding <span>Courses</span>
+            {t('title.0', {fallback: "Branding"})} <span>{t('title.1', {fallback: "Courses"})}</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -35,8 +38,7 @@ const CoursesHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Essential steps. Practical guidance. Your brand’s evolution,
-            simplified.
+            {t('description', {fallback: "Essential steps. Practical guidance. Your brand’s evolution, simplified."})}
           </motion.p>
           <motion.div
             initial="hidden"

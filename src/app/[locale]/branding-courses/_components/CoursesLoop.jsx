@@ -3,8 +3,11 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import MainButton from "@/components/MainButton";
+import { useTranslations } from "next-intl";
 
 const CoursesLoop = () => {
+  const t = useTranslations("brandingCourses.loop");
+
   return (
     <section className="courses-wrap">
       <div className="_container">
@@ -19,21 +22,17 @@ const CoursesLoop = () => {
             <div>
               <div className="top">
                 <h2>
-                  Market Research 101: Understanding Your Audience Without
-                  Breaking the Bank
+                  {t('cards.0.title', {fallback: "Market Research 101: Understanding Your Audience Without Breaking the Bank"})}
                 </h2>
                 <span className="divider"></span>
                 <div className="content">
                   <p>
-                    Discover practical, low-cost methods to identify your target
-                    market, uncover customer needs, and set your brand on the
-                    path to success. Perfect for beginners looking to build a
-                    strong foundation.
+                    {t('cards.0.description', {fallback: "Discover practical, low-cost methods to identify your target market, uncover customer needs, and set your brand on the path to success. Perfect for beginners looking to build a strong foundation."})}
                   </p>
                 </div>
               </div>
               <MainButton
-                text={"Read"}
+                text={t('read', {fallback: "Read"})}
                 link={
                   "/branding-courses/market-research-101-understanding-your-audience-without-breaking-the-bank"
                 }
@@ -51,19 +50,17 @@ const CoursesLoop = () => {
             <div>
               <div className="top">
                 <h2>
-                  Competitor Analysis: Spotting Opportunities to Stand Out
+                  {t('cards.1.title', {fallback: "Competitor Analysis: Spotting Opportunities to Stand Out"})}
                 </h2>
                 <span className="divider"></span>
                 <div className="content">
                   <p>
-                    Learn step-by-step techniques to uncover competitor
-                    strengths and weaknesses, spot market gaps, and position
-                    your brand for success in a crowded marketplace.
+                    {t('cards.1.description', {fallback: "Learn step-by-step techniques to uncover competitor strengths and weaknesses, spot market gaps, and position your brand for success in a crowded marketplace."})}
                   </p>
                 </div>
               </div>
               <MainButton
-                text={"Read"}
+                text={t('read', {fallback: "Read"})}
                 link={
                   "/branding-courses/competitor-analysis-spotting-opportunities-to-stand-out"
                 }
@@ -81,20 +78,17 @@ const CoursesLoop = () => {
             <div>
               <div className="top">
                 <h2>
-                  Growing Your Social Media Audience: Free and Effective
-                  Strategies
+                  {t('cards.2.title', {fallback: "Growing Your Social Media Audience: Free and Effective Strategies"})}
                 </h2>
                 <span className="divider"></span>
                 <div className="content">
                   <p>
-                    Unlock practical, no-cost methods to boost your social media
-                    presence, engage followers, and grow your audience
-                    organically with proven techniques.
+                    {t('cards.2.description', {fallback: "Unlock practical, no-cost methods to boost your social media presence, engage followers, and grow your audience organically with proven techniques."})}
                   </p>
                 </div>
               </div>
               <MainButton
-                text={"Read"}
+                text={t('read', {fallback: "Read"})}
                 link={
                   "/branding-courses/growing-your-social-media-audience-free-and-effective-strategies"
                 }
@@ -112,20 +106,17 @@ const CoursesLoop = () => {
             <div>
               <div className="top">
                 <h2>
-                  Building Your Brand Identity: Colours, Logos, and Messaging on
-                  a Budget
+                  {t('cards.3.title', {fallback: "Building Your Brand Identity: Colours, Logos, and Messaging on a Budget"})}
                 </h2>
                 <span className="divider"></span>
                 <div className="content">
                   <p>
-                    Craft a standout brand identity with budget-friendly tips on
-                    choosing the right colours, designing impactful logos, and
-                    creating compelling messaging that resonates.
+                    {t('cards.3.description', {fallback: "Craft a standout brand identity with budget-friendly tips on choosing the right colours, designing impactful logos, and creating compelling messaging that resonates."})}
                   </p>
                 </div>
               </div>
               <MainButton
-                text={"Read"}
+                text={t('read', {fallback: "Read"})}
                 link={
                   "/branding-courses/building-your-brand-identity-colours-logos-and-messaging-on-a-budget"
                 }

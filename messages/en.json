@@ -869,5 +869,44 @@
         "button": "OK"
       }
     }
+  },
+  "brandingCourses": {
+    "hero": {
+      "title": {
+        "0": "Branding",
+        "1": "Courses"
+      },
+      "description": "Essential steps. Practical guidance. Your brand’s evolution, simplified."
+    },
+    "loop": {
+      "read": "Read",
+      "cards": {
+        "0": {
+          "title": "Market Research 101: Understanding Your Audience Without Breaking the Bank",
+          "description": "Discover practical, low-cost methods to identify your target market, uncover customer needs, and set your brand on the path to success. Perfect for beginners looking to build a strong foundation."
+        },
+        "1": {
+          "title": "Competitor Analysis: Spotting Opportunities to Stand Out",
+          "description": "Learn step-by-step techniques to uncover competitor strengths and weaknesses, spot market gaps, and position your brand for success in a crowded marketplace."
+        },
+        "2": {
+          "title": "Growing Your Social Media Audience: Free and Effective Strategies",
+          "description": "Unlock practical, no-cost methods to boost your social media presence, engage followers, and grow your audience organically with proven techniques."
+        },
+        "3": {
+          "title": "Building Your Brand Identity: Colours, Logos, and Messaging on a Budget",
+          "description": "Craft a standout brand identity with budget-friendly tips on choosing the right colours, designing impactful logos, and creating compelling messaging that resonates."
+        }
+      }
+    },
+    "contact": {
+      "text": "Stay Ahead with Us",
+      "buttonText": "Let’s Start Your Brand"
+    }
+  },
+  "brandingCoursedSlug": {
+    "back": "Back",
+    "next": "Next Tutorial",
+    "request": "Let’s Start Your Brand"
   }
 }

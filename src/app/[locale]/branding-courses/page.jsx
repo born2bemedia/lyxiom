@@ -3,6 +3,7 @@ import "@/styles/courses.scss";
 import CoursesHero from "./_components/CoursesHero";
 import ContactBlock from "@/components/ContactBlock";
 import CoursesLoop from "./_components/CoursesLoop";
+import { getTranslations } from "next-intl/server";
 
 export const metadata = {
   title: "Branding Courses | Lyxiom",
@@ -16,14 +17,16 @@ export const metadata = {
   },
 };
 
-const BrandingCourses = () => {
+const BrandingCourses = async () => {
+  const t = await getTranslations("brandingCourses.contact");
+
   return (
     <>
       <CoursesHero />
       <CoursesLoop />
       <ContactBlock
-        text={"Stay Ahead with Us"}
-        buttonText={"Let’s Start Your Brand"}
+        text={t('text', {fallback: "Stay Ahead with Us"})}
+        buttonText={t('buttonText', {fallback: "Let’s Start Your Brand"})}
         buttonLink={"#"}
         imageUrl="/images/complex/contact.png"
         buttonType="request"

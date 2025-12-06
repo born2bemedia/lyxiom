@@ -4,8 +4,11 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import RequestButton from "@/components/RequestButton";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const InnerCourseText = ({ content, postSlug, prevSlug, nextSlug }) => {
+  const t = useTranslations("brandingCoursedSlug");
+
   return (
     <section className="article-main">
       <div className=" _container">
@@ -20,16 +23,16 @@ const InnerCourseText = ({ content, postSlug, prevSlug, nextSlug }) => {
               className="prev-button"
             >
               <img src="/images/courses/prev.svg" />
-              <span>Back</span>
+              <span>{t('back', {fallback: "Back"})}</span>
             </Link>
           )}
-          <RequestButton text={"Let’s Start Your Brand"} />
+          <RequestButton text={t('request', {fallback: "Let’s Start Your Brand"})} />
           {nextSlug && (
             <Link
               href={`/branding-courses/${nextSlug}`}
               className="next-button"
             >
-              <span>Next Tutorial</span>
+              <span>{t('next', {fallback: "Next Tutorial"})}</span>
               <img src="/images/courses/next.svg" />
             </Link>
           )}
