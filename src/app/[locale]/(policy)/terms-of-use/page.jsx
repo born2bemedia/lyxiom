@@ -30,8 +30,11 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-const TermsAndConditions = async () => {
-  const page = await getPage("terms-of-use");
+const TermsAndConditions = async ({ params }) => {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
+  const page = await getPage("terms-of-use", locale);
+
   return (
     <>
       <section className="policy">
