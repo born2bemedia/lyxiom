@@ -10,24 +10,27 @@ import MainButton from "./MainButton";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
 import { excludedCountries } from "@/utils/countries";
+import { useTranslations } from "next-intl";
 
 function OrderPopup() {
   const countryCode = useCountryCode();
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } =
     usePopupStore();
 
+  const t = useTranslations("orderPopup");
+
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("This field is required"),
-    lastName: Yup.string().required("This field is required"),
+    firstName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    lastName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     email: Yup.string()
-      .email("Please provide a valid email address")
-      .required("This field is required"),
-    phone: Yup.string().required("This field is required"),
-    activity: Yup.string().required("This field is required"),
+      .email(t("errors.email", {fallback: "Please provide a valid email address"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
+    phone: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    activity: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     socialMediaLink: Yup.string(),
     agree: Yup.boolean()
-      .oneOf([true], "This field is required")
-      .required("This field is required"),
+      .oneOf([true], t("errors.required", {fallback: "This field is required"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
   });
 
   const initialValues = {

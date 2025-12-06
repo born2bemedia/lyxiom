@@ -809,5 +809,11 @@
         }
       }
     }
+  },
+  "orderPopup": {
+    "errors": {
+      "required": "This field is required",
+      "email": "Please provide a valid email address"
+    }
   }
 }
