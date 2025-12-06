@@ -10,21 +10,24 @@ import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
 import { excludedCountries } from "@/utils/countries";
 import ReCaptcha from "react-google-recaptcha";
+import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
 
+  const t = useTranslations("contact.form");
+
   const countryCode = useCountryCode();
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("This field is required"),
-    lastName: Yup.string().required("This field is required"),
+    firstName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    lastName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     email: Yup.string()
-      .email("Please provide a valid email address")
-      .required("This field is required"),
-    phone: Yup.string().required("This field is required"),
+      .email(t("errors.invalidEmail", {fallback: "Please provide a valid email address"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
+    phone: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     agree: Yup.boolean()
-      .oneOf([true], "This field is required")
-      .required("This field is required"),
+      .oneOf([true], t("errors.required", {fallback: "This field is required"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
   });
 
   const initialValues = {
@@ -89,13 +92,13 @@ const ContactForm = () => {
               <Form>
                 {!status && (
                   <div className="form-inner">
-                    <h2>How Can We Help You?</h2>
+                    <h2>{t('title', {fallback: "How Can We Help You?"})}</h2>
 
                     <div>
                       <Field
                         name="firstName"
                         type="text"
-                        placeholder="First Name"
+                        placeholder={t('fields.firstName', {fallback: "First Name"})}
                         className={
                           touched.firstName && errors.firstName ? "invalid" : ""
                         }
@@ -111,7 +114,7 @@ const ContactForm = () => {
                       <Field
                         name="lastName"
                         type="text"
-                        placeholder="Last Name"
+                        placeholder={t('fields.lastName', {fallback: "Last Name"})}
                         className={
                           touched.lastName && errors.lastName ? "invalid" : ""
                         }
@@ -127,7 +130,7 @@ const ContactForm = () => {
                       <PhoneInput
                         country={countryCode}
                         excludeCountries={excludedCountries}
-                        placeholder="Phone"
+                        placeholder={t('fields.phone', {fallback: "Phone"})}
                         onChange={(phone) => setFieldValue("phone", phone)}
                         className={
                           touched.phone && errors.phone ? "invalid" : ""
@@ -144,7 +147,7 @@ const ContactForm = () => {
                       <Field
                         name="email"
                         type="email"
-                        placeholder="Email"
+                        placeholder={t('fields.email', {fallback: "Email"})}
                         className={
                           touched.email && errors.email ? "invalid" : ""
                         }
@@ -160,7 +163,7 @@ const ContactForm = () => {
                       <Field
                         name="inquiry"
                         type="text"
-                        placeholder="Your inquiry"
+                        placeholder={t('fields.inquiry', {fallback: "Your inquiry"})}
                         className="field"
                       />
                     </div>
@@ -174,8 +177,7 @@ const ContactForm = () => {
                         />
                         <CheckboxIcon />
                         <span>
-                          I agree to be contacted by Lyxiom in accordance with
-                          the Privacy Policy.
+                          {t('fields.privacyPolicy', {fallback: "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."})}
                         </span>
                       </label>
                       <ErrorMessage
@@ -193,19 +195,19 @@ const ContactForm = () => {
                       className="order-button"
                       disabled={isSubmitting || !isCaptchaVerified}
                     >
-                      <span>Request</span>
+                      <span>{t('buttonText', {fallback: "Request"})}</span>
                     </button>
                   </div>
                 )}
                 {status && status.success && (
                   <div className="success">
-                    <h3>Submission successful!</h3>
+                    <h3>{t('success.title', {fallback: "Submission successful!"})}</h3>
                     <p>
-                      We’ll review your order and get back to you soon.
+                      {t('success.description.0', {fallback: "We’ll review your order and get back to you soon."})}
                       <br />
-                      Thank you for choosing Lyxiom!
+                      {t('success.description.1', {fallback: "Thank you for choosing Lyxiom!"})}
                     </p>
-                    <Link href="/contact-us">OK</Link>
+                    <Link href="/contact-us">{t('success.button', {fallback: "OK"})}</Link>
                   </div>
                 )}
               </Form>

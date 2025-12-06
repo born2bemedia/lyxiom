@@ -835,5 +835,39 @@
       },
       "button": "OK"
     }
+  },
+  "contact": {
+    "hero": {
+      "title": {
+        "0": "Start Your Brand",
+        "1": "Here"
+      },
+      "description": "Connecting ideas. Starting journeys. Building success.",
+      "directContacts": "Direct Contacts"
+    },
+    "form": {
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Please provide a valid email address"
+      },
+      "title": "How Can We Help You?",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "inquiry": "Your inquiry",
+        "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+      },
+      "buttonText": "Request",
+      "success": {
+        "title": "Submission successful!",
+        "description": {
+          "0": "We’ll review your order and get back to you soon.",
+          "1": "Thank you for choosing Lyxiom!"
+        },
+        "button": "OK"
+      }
+    }
   }
 }

@@ -4,8 +4,11 @@ import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const ContactHero = () => {
+  const t = useTranslations("contact.hero");
+
   return (
     <section className="contact-hero">
       <div className="video-wrap">
@@ -28,7 +31,7 @@ const ContactHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Start Your Brand <span>Here</span>
+            {t('title.0', {fallback: "Start Your Brand"})} <span>{t('title.1', {fallback: "Here"})}</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -36,7 +39,7 @@ const ContactHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Connecting ideas. Starting journeys. Building success.
+            {t('description', {fallback: "Connecting ideas. Starting journeys. Building success."})}
           </motion.p>
         </div>
         <div className="contact-hero__bottom">
@@ -96,7 +99,7 @@ const ContactHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Direct Contacts
+            {t('directContacts', {fallback: "Direct Contacts"})}
           </motion.h2>
           <div className="row">
             <motion.div
