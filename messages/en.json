@@ -814,6 +814,26 @@
     "errors": {
       "required": "This field is required",
       "email": "Please provide a valid email address"
+    },
+    "title": "Order",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "activity": "Activity",
+      "socialMediaLink": "Social Media Link",
+      "message": "Your Message",
+      "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+    },
+    "buttonText": "Request",
+    "success": {
+      "title": "Submission successful!",
+      "description": {
+        "0": "We’ll review your order and get back to you soon.",
+        "1": "Thank you for choosing Lyxiom!"
+      },
+      "button": "OK"
     }
   }
 }
