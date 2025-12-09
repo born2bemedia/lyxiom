@@ -1,0 +1,912 @@
+{
+  "home": {
+    "hero": {
+      "slides": {
+        "0": "Each year, 1 million new brands emerge, but only 0.001% stand the test of time.",
+        "1": "Meet Lyxiom: Full-cycle agency. Dynamic marketing. Building brands that win."
+      },
+      "title": {
+        "0": "Packing brands",
+        "1": "unpacking the future"
+      },
+      "button": "Start Your Brand"
+    },
+    "changes": {
+      "title": {
+        "0": "2025 Changes",
+        "1": "the Rules"
+      },
+      "slides": {
+        "0": {
+          "title": {
+            "0": "PC Costs",
+            "1": "Soar"
+          },
+          "description": "Lead costs in PPC campaigns have risen over 40%, making them less effective for new projects. Diversifying beyond paid ads is crucial."
+        },
+        "1": {
+          "title": {
+            "0": "Data for",
+            "1": "Engagement:"
+          },
+          "description": "Engaging users now demands detailed data analysis and targeted content. Basic tactics no longer suffice."
+        },
+        "2": {
+          "title": {
+            "0": "Essential",
+            "1": "Tech"
+          },
+          "description": "AI and automation tools are now standard for efficient marketing. Without them, staying competitive is impossible."
+        },
+        "3": {
+          "title": {
+            "0": "Continuous",
+            "1": "Learning Needed"
+          },
+          "description": "Success requires ongoing education and partnerships with experts to keep up with trends and best practices."
+        }
+      }
+    },
+    "response": {
+      "title": "Lyxiom Response to New Challenges",
+      "cards": {
+        "0": {
+          "title": "Brand Packing",
+          "description": "Crafting and positioning brands with a winning strategy, integrating product, service, and experience design to ensure impactful market entry and growth."
+        },
+        "1": {
+          "title": "Content Design",
+          "description": "Developing targeted, data-driven content that resonates, drives engagement, and keeps audiences connected across all channels."
+        },
+        "2": {
+          "title": "SMM",
+          "description": "Developing tailored social media strategies to increase reach and engagement, leveraging trends and real-time data to build a loyal following."
+        },
+        "3": {
+          "title": "SEO",
+          "description": "Optimising every aspect of your brand for search, ensuring maximum visibility with precise, trend-driven keyword strategies and technical excellence."
+        },
+        "4": {
+          "title": "Performance",
+          "description": "Running advanced ad campaigns focused on cost efficiency and high ROI, adapting quickly to market changes and user behaviour trends."
+        }
+      }
+    },
+    "cta1": {
+      "title": "Full-Cycle Complex Solutions Are Here",
+      "button": "Explore Packages",
+      "subtitle": "Discover end-to-end solutions tailored to your needs, combining strategy, creativity, and technology."
+    },
+    "whatMeans": {
+      "title": "What Lyxiom Means",
+      "button": "Start Your Brand",
+      "cards": {
+        "0": {
+          "title": "Top",
+          "description": "Google, Bing, Yahoo",
+          "subtitle": "Within the following 6 months"
+        },
+        "1": {
+          "description": "of Average CTR",
+          "subtitle": "Through learning of your audience"
+        },
+        "2": {
+          "description": "Monthly Growth",
+          "subtitle": "With data and performance marketing"
+        },
+        "3": {
+          "description": "Organic Traffic",
+          "subtitle": "Through quality content and diplomacy"
+        }
+      }
+    },
+    "cta2": {
+      "title": "Branding Courses",
+      "button": "Go Learning",
+      "subtitle": "Learn how to build, grow and scale your brand: market insights, brand packing lessons, expertly crafted strategies and more."
+    },
+    "contact": {
+      "text": "Need Assistance? Contact Lyxiom!",
+      "buttonText": "Contact Us"
+    }
+  },
+  "requestPopup": {
+    "errors": {
+      "required": "This field is required",
+      "email": "Please provide a valid email address"
+    },
+    "title": "LET'S START YOUR BRAND",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "activity": "Activity",
+      "socialMediaLink": "Social Media Link",
+      "goal": "Goal",
+      "need": "Need",
+      "message": "Your Message",
+      "complexApproach": "Complex Approach",
+      "specificSolution": "Specific Solution"
+    },
+    "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy.",
+    "yourGoal": "Your Goal:",
+    "specificSolution": "Specific Solution",
+    "complexApproach": "Complex Approach",
+    "start": "Start",
+    "growth": "Growth",
+    "scale": "Scale",
+    "iNeed": "I need:",
+    "request": "Request",
+    "success": {
+      "title": "Submission successful!",
+      "description": {
+        "0": "We’ll review your request and get back to you soon.",
+        "1": "Thank you for choosing Lyxiom!"
+      },
+      "button": "OK"
+    }
+  },
+  "header": {
+    "menu": {
+      "ourServices": "OUR SERVICES",
+      "brandDesign": "Brand Design",
+      "productServiceExperienceDesign": "Product, Service, Experience Design",
+      "contentAndBrandStoryDesign": "Content and Brand Story Design",
+      "smm": "SMM",
+      "seo": "SEO",
+      "performance": "Performance (Advertising)",
+      "brandScaling": "Brand Scaling",
+      "complexSolutions": "Complex Solutions",
+      "introducingLyxiom": "Introducing Lyxiom",
+      "yourWay": "Your Way",
+      "brandingCourses": "Branding Courses",
+      "contactUs": "Contact Us"
+    }
+  },
+  "footer": {
+    "description": {
+      "0": "Building Brands That",
+      "1": "Break Through."
+    },
+    "menu": {
+      "ourServices": "Our Services",
+      "complexSolutions": "Complex Solutions",
+      "brandingCourses": "Branding Courses",
+      "introducingLyxiom": "Introducing Lyxiom",
+      "termsOfUse": "Terms of Use",
+      "yourPrivacy": "Your Privacy",
+      "ourCookie": "Our Cookie",
+      "refundPolicy": "Refund Policy"
+    },
+    "email": "Email:",
+    "phone": "Phone:",
+    "registeredAddress": "Registered address:",
+    "officeAddress": "Office address:",
+    "copyright": "All rights safeguarded. Every idea, every design — protected."
+  },
+  "yourWay": {
+    "hero": {
+      "title": {
+        "0": "Your",
+        "1": "Way"
+      },
+      "description": "Your journey from idea to success, reimagined."
+    },
+    "steps": {
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Step 1:",
+            "1": "Your Vision, Our Start"
+          },
+          "description": "You send us a request, and the journey begins."
+        },
+        "1": {
+          "title": {
+            "0": "Step 2:",
+            "1": "Getting to Know You"
+          },
+          "description": {
+            "0": "Our team reaches out to gather essential details",
+            "1": "about your needs, goals, and challenges."
+          }
+        },
+        "2": {
+          "title": {
+            "0": "Step 3:",
+            "1": "Tailored Expertise Assembled"
+          },
+          "description": {
+            "0": "We build a dedicated team and assign tasks to",
+            "1": "match your vision."
+          }
+        },
+        "3": {
+          "title": {
+            "0": "Step 4:",
+            "1": "Insightful Research"
+          },
+          "description": {
+            "0": "From market analysis to customer insights, we",
+            "1": "uncover data to inform your solution."
+          }
+        },
+        "4": {
+          "title": {
+            "0": "Step 5:",
+            "1": "Custom Solutions Delivered"
+          },
+          "description": {
+            "0": "We craft and share a bespoke solution,",
+            "1": "refining it together to achieve perfection."
+          }
+        },
+        "5": {
+          "title": {
+            "0": "Step 6:",
+            "1": "Results That Matter"
+          },
+          "description": {
+            "0": "With your solution in action, we track outcomes",
+            "1": "and ensure measurable success."
+          }
+        }
+      },
+      "button": "Let’s Start Your Brand"
+    }
+  },
+  "introducing": {
+    "hero": {
+      "title": "Introducing",
+      "description": "A new perspective on success, crafted just for you."
+    },
+    "second": {
+      "title": "Industry Leaders",
+      "subtitle": {
+        "0": "Only",
+        "1": "Hours to Your Success"
+      },
+      "subtitle2": "Chances to Fail"
+    },
+    "howWeWork": {
+      "title": "How We Work",
+      "cards": {
+        "0": {
+          "title": {
+            "0": "Reframing",
+            "1": "Perspectives"
+          },
+          "description": "Every challenge starts with a fresh lens. Our insights-driven approach uncovers new ways to understand your customers and redefine your brand’s opportunities."
+        },
+        "1": {
+          "title": {
+            "0": "Commercially",
+            "1": "Driven Thinking"
+          },
+          "description": "We refocus your brand to deliver profit, value, and lasting impact—because enthusiasm alone won't sustain success."
+        },
+        "2": {
+          "title": {
+            "0": "Innovative",
+            "1": "Experimentation"
+          },
+          "description": "We embrace cutting-edge technologies and challenge conventional norms to explore what’s next for your business."
+        },
+        "3": {
+          "title": {
+            "0": "Meticulous",
+            "1": "Craftsmanship"
+          },
+          "description": "Success requires ongoing education and partnerships with experts to keep up with trends and best practices."
+        }
+      },
+      "button": "Let’s Start Your Brand"
+    }
+  },
+  "complexSolution": {
+    "hero": {
+      "title": {
+        "0": "Complex",
+        "1": "Solutions"
+      },
+      "description": "One brand. Multiple solutions. A comprehensive approach to growth."
+    },
+    "packages": {
+      "cards": {
+        "0": {
+          "title": "Start Package",
+          "description": "For those starting from scratch.",
+          "subtitle": "Ideal for individuals with no existing brand presence who need complete support from concept to promotion.",
+          "whatsIncludedTitle": "What's Included:",
+          "whatsIncluded": {
+            "0": "Brand ideation and validation",
+            "1": "Market and audience research",
+            "2": "Brand identity development (visuals, naming, voice)",
+            "3": "Website or platform setup",
+            "4": "Launch promotion and initial advertising campaigns"
+          },
+          "serviceName": "Start Package",
+          "buttonText": "Request Now"
+        },
+        "1": {
+          "title": "Grow Package",
+          "description": "For brands seeking a fresh start.",
+          "subtitle": "Perfect for customers with a struggling brand that needs optimization to achieve growth and better performance.",
+          "whatsIncludedTitle": "What's Included:",
+          "whatsIncluded": {
+            "0": "Brand and audience analysis",
+            "1": "Market gap identification",
+            "2": "Social media and website optimization",
+            "3": "Content strategy and enhanced branding elements",
+            "4": "Targeted advertising and promotional campaigns"
+          },
+          "serviceName": "Grow Package",
+          "buttonText": "Request Now"
+        },
+        "2": {
+          "title": "Scale Package",
+          "description": "For brands ready to dominate.",
+          "subtitle": "Designed for successful brands aiming to outgrow their competitors and break through growth barriers.",
+          "whatsIncludedTitle": "What's Included:",
+          "whatsIncluded": {
+            "0": "Advanced competitor analysis",
+            "1": "Identification of scaling opportunities",
+            "2": "Strategic marketing techniques",
+            "3": "High-impact advertising campaigns",
+            "4": "Enhanced engagement tools and growth-focused solutions"
+          },
+          "serviceName": "Scale Package",
+          "buttonText": "Request Now"
+        },
+        "3": {
+          "title": "Tailored Package",
+          "description": "Solutions for unique challenges.",
+          "subtitle": "For individuals or brands requiring personalised strategies to solve specific issues or achieve ambitious goals.",
+          "whatsIncludedTitle": "What's Included:",
+          "whatsIncluded": {
+            "0": "Custom analysis of your brand’s needs",
+            "1": "Bespoke service combinations",
+            "2": "Flexible and goal-oriented solutions tailored to your case",
+            "3": "Full consultation to ensure the best outcomes"
+          },
+          "serviceName": "Tailored Package",
+          "buttonText": "Request Now"
+        }
+      }
+    },
+    "contact": {
+      "text": "Need Assistance? Contact Lyxiom!",
+      "buttonText": "Contact Us"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": {
+        "0": "Your Brand Starts",
+        "1": "Here"
+      },
+      "description": "Clear strategies. Precise actions. Proven results."
+    },
+    "loop": {
+      "cards": {
+        "0": {
+          "title": "Brand Design",
+          "description": "A strong brand starts with research and strategy. We deliver market insights, target audience analysis, and core brand concepts, laying the groundwork for impactful growth.",
+          "buttonText": "Start"
+        },
+        "1": {
+          "title": "Product, Service, Experience Design",
+          "description": "Products and services gain value through intuitive design and purposeful interactions. Using user research and behavioural insights, we create solutions that connect seamlessly with your audience.",
+          "buttonText": "Invent"
+        },
+        "2": {
+          "title": "Content and Brand Story Design",
+          "description": "Every brand has a story. Through tailored narratives, structured messaging, and creative execution, we shape a cohesive voice that aligns with your goals and audience.",
+          "buttonText": "Create"
+        },
+        "3": {
+          "title": "Social Media Management",
+          "description": "Effective social media presence requires consistency and relevance. We provide platform-specific strategies, content creation, and audience engagement tailored to your goals.",
+          "buttonText": "Go Social"
+        },
+        "4": {
+          "title": "Search Engine Optimization",
+          "description": "Visibility in search is built on precision. Our approach integrates technical improvements, keyword research, and content alignment to elevate your discoverability.",
+          "buttonText": "Go Top"
+        },
+        "5": {
+          "title": "Performance",
+          "description": "Advertising success relies on data and adaptability. We deliver precise audience segmentation, real-time adjustments, and optimised campaigns for impactful results.",
+          "buttonText": "Advertise"
+        },
+        "6": {
+          "title": "Brand Scaling",
+          "description": "Sustainable growth comes from strategy and adaptability. We focus on operational efficiency, audience expansion, and innovative solutions to help your brand reach new heights.",
+          "buttonText": "Scale"
+        }
+      }
+    },
+    "contact": {
+      "buttonText": "Complex Solutions",
+      "text": {
+        "0": "Not sure what your perfect fit is?",
+        "1": "Explore our package offers!"
+      }
+    },
+    "slugContact": {
+      "text": {
+        "0": "Not sure what your perfect fit is?",
+        "1": "Explore our package offers!"
+      },
+      "buttonText": "Complex Solutions"
+    },
+    "orderButton": {
+      "text": "Order Now"
+    }
+  },
+  "servicesList": {
+    "0": {
+      "category": {
+        "0": "Brand",
+        "1": "Design"
+      },
+      "overview": {
+        "title": "Solid foundations. Seamless systems. Stronger brands.",
+        "highlightsText": "Why Your Brand Matters",
+        "highlights": {
+          "0": {
+            "title": "Engagement",
+            "description": "Brands with strong identity and messaging capture attention and retain audiences more effectively."
+          },
+          "1": {
+            "title": "Higher Loyalty",
+            "description": "Consistent branding builds trust, fostering long-term customer relationships."
+          },
+          "2": {
+            "title": "Profitability",
+            "description": "Well-crafted brands drive higher conversion rates and greater return on investment."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Brand Concept and Ideation",
+          "description": "A distinct and compelling brand idea is developed to define your market position and differentiate your offering, ensuring lasting impact in a crowded landscape."
+        },
+        "1": {
+          "name": "Growth Strategy",
+          "description": "Opportunities for growth are uncovered through in-depth analysis of market trends and customer behaviour, helping to identify new audience segments and markets."
+        },
+        "2": {
+          "name": "Brand Identity",
+          "description": "A cohesive brand image is developed, incorporating naming, tone of voice, and visual elements that align with your vision and resonate with your audience."
+        },
+        "3": {
+          "name": "Brand Foundation",
+          "description": "The foundation of your brand is established by defining its purpose, positioning, and guiding principles to ensure consistent and impactful messaging."
+        },
+        "4": {
+          "name": "Brand Systems",
+          "description": "Optimal systems and tools are set up to enhance your brand’s performance. From Google Analytics to tailored CRMs and data analysis platforms, every solution is carefully selected to meet your brand's unique needs and drive success."
+        },
+        "5": {
+          "name": "Brand Architecture",
+          "description": "The structure of your brand is strategically organised to enhance clarity and align with expansion goals, ensuring a clear and effective presentation of offerings."
+        }
+      }
+    },
+    "1": {
+      "category": {
+        "0": "Product, Service",
+        "1": "Experience",
+        "2": "Design"
+      },
+      "overview": {
+        "title": {
+          "0": "Service or experience as a",
+          "1": "product. Market-ready solutions."
+        },
+        "highlightsText": "Why Your Product Matters",
+        "highlights": {
+          "0": {
+            "title": "User Satisfaction",
+            "description": "Optimised products meet customer needs, improving experiences and building trust."
+          },
+          "1": {
+            "title": "Faster Market Entry",
+            "description": "Efficient product development reduces time to launch, gaining a competitive edge."
+          },
+          "2": {
+            "title": "Customer Retention",
+            "description": "Well-designed products ensure repeat usage and long-term loyalty."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Product Concept and Ideation",
+          "description": "A distinct and compelling product idea is developed to define your market position and differentiate your offering, ensuring lasting impact in a crowded landscape."
+        },
+        "1": {
+          "name": "Product Development",
+          "description": "A product is developed, incorporating design, functionality, and user experience to meet customer needs and solve problems."
+        },
+        "2": {
+          "name": "Product Testing and Validation",
+          "description": "A product is tested and validated to ensure it meets customer needs and solves problems effectively."
+        },
+        "3": {
+          "name": "Product Launch and Promotion",
+          "description": "A product is launched and promoted to ensure it is visible to customers and solves problems effectively."
+        },
+        "4": {
+          "name": "Product Launch and Promotion",
+          "description": "A product is launched and promoted to ensure it is visible to customers and solves problems effectively."
+        },
+        "5": {
+          "name": "Product Launch and Promotion",
+          "description": "A product is launched and promoted to ensure it is visible to customers and solves problems effectively."
+        }
+      }
+    },
+    "2": {
+      "category": {
+        "0": "Content",
+        "1": "Brand Story",
+        "2": "Design"
+      },
+      "overview": {
+        "title": "One vision. One voice. Your brand DNA brought to life.",
+        "highlightsText": "Why Your Content Matters",
+        "highlights": {
+          "0": {
+            "title": "Stronger Connection",
+            "description": "Tailored content builds deeper emotional ties with your audience."
+          },
+          "1": {
+            "title": "Customer Retention",
+            "description": "Consistent and relatable brand stories foster stronger loyalty."
+          },
+          "2": {
+            "title": "Campaign ROI",
+            "description": "Optimised and strategically planned content drives measurable profitability."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Custom Research & Creative Optimization",
+          "description": "Comprehensive research to refine your content. We analyse technical factors, platform requirements, and audience behaviour to maximise creative impact."
+        },
+        "1": {
+          "name": "Content Design",
+          "description": "Developing branded templates, banners, and visual assets aligned with your identity, including colour schemes, fonts, and design elements."
+        },
+        "2": {
+          "name": "Brand Story Creation",
+          "description": "Crafting a compelling narrative that resonates with your target audience, ensuring your story aligns with their values and aspirations."
+        },
+        "3": {
+          "name": "Content Strategy Development",
+          "description": "Structuring a roadmap for consistent, high-performing content across platforms, tailored to your audience's preferences and needs."
+        },
+        "4": {
+          "name": "Global Content Production",
+          "description": "Leveraging a global network of expert resources to produce high-quality content at scale, ensuring consistency across markets."
+        },
+        "5": {
+          "name": "Content Performance Monitoring",
+          "description": "Ongoing analysis of content effectiveness with actionable insights to improve results."
+        }
+      }
+    },
+    "3": {
+      "category": "SMM",
+      "overview": {
+        "title": "Building visibility. Growing audiences. Driving engagement.",
+        "highlightsText": "Why Going Social Matters",
+        "highlights": {
+          "0": {
+            "title": "Audience Growth",
+            "description": "through targeted social media campaigns."
+          },
+          "1": {
+            "title": "Customer Retention",
+            "description": "driven by consistent social engagement."
+          },
+          "2": {
+            "title": "ROI Improvement",
+            "description": "with optimised social ad strategies."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Platform Analysis & Strategy",
+          "description": "Evaluating social media channels to determine the best platforms for your brand and crafting tailored strategies for maximum impact."
+        },
+        "1": {
+          "name": "Social Media Branding",
+          "description": "Ensuring brand consistency across profiles by integrating your visual identity, voice, and messaging into each platform’s unique environment."
+        },
+        "2": {
+          "name": "Community Engagement",
+          "description": "Fostering meaningful interactions through active responses, conversations, and content that resonates with your audience."
+        },
+        "3": {
+          "name": "Content Planning & Scheduling",
+          "description": "Developing a calendar of impactful posts and campaigns to maintain consistent, engaging presence."
+        },
+        "4": {
+          "name": "Ad Campaign Optimization",
+          "description": "Creating and optimising paid social media campaigns to ensure cost-effective targeting and high conversion rates."
+        },
+        "5": {
+          "name": "Analytics & Performance Tracking",
+          "description": "Monitoring key metrics to measure success, identify opportunities, and refine strategies for continued growth."
+        }
+      }
+    },
+    "4": {
+      "title": "SEO",
+      "overview": {
+        "title": "Top positions. Organic traffic. Visibility beyond the basics.",
+        "highlightsText": "Why Going Top Matters",
+        "highlights": {
+          "0": {
+            "title": "Organic Traffic",
+            "description": "with well-optimised content and keywords."
+          },
+          "1": {
+            "title": "Lead Conversion Rates",
+            "description": "from improved SERP visibility."
+          },
+          "2": {
+            "title": "Authority Boost",
+            "description": "through consistent top-ranking performance."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Website Audit and SEO Analysis",
+          "description": "A deep dive into your website's performance to identify optimization opportunities, from technical issues to content gaps."
+        },
+        "1": {
+          "name": "Keyword Research and Strategy",
+          "description": "Defining high-impact keywords aligned with your industry and audience to improve search rankings and attract qualified traffic."
+        },
+        "2": {
+          "name": "On-Page SEO Optimization",
+          "description": "Refining website content, structure, and metadata for better search engine compatibility and user experience."
+        },
+        "3": {
+          "name": "Technical SEO Enhancements",
+          "description": "Addressing backend issues like load speed, mobile-friendliness, and site architecture to meet evolving search engine standards."
+        },
+        "4": {
+          "name": "Link Building and Outreach",
+          "description": "Creating high-quality backlinks through strategic partnerships and outreach to boost domain authority and brand’s reputation."
+        },
+        "5": {
+          "name": "SEO Performance Tracking and Reporting",
+          "description": "Comprehensive monitoring of rankings, traffic, and conversion rates, with actionable insights to refine strategies."
+        }
+      }
+    },
+    "5": {
+      "category": "Performance",
+      "overview": {
+        "title": "Precision targeting. Data-driven decisions. Results that scale.",
+        "highlightsText": "Why Brand's Performance Matters",
+        "highlights": {
+          "0": {
+            "title": "Return On Ad Spend",
+            "description": "through optimised campaigns and strategic targeting."
+          },
+          "1": {
+            "title": "Customer Acquisition",
+            "description": "with tailored ad placements and messaging."
+          },
+          "2": {
+            "title": "Conversion Rates",
+            "description": "driven by data-backed performance strategies."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Paid Search Advertising",
+          "description": "Creating and optimising campaigns on Google Ads and other search platforms to capture high-intent audiences."
+        },
+        "1": {
+          "name": "Display and Programmatic Advertising",
+          "description": "Leveraging visually impactful ads and automated systems for precise audience targeting across multiple networks."
+        },
+        "2": {
+          "name": "Social Media Advertising",
+          "description": "Running targeted campaigns on social media platforms to reach and engage your audience with personalised content and ads."
+        },
+        "3": {
+          "name": "Video and Streaming Ad Campaigns",
+          "description": "Driving engagement with creative video ads optimised for YouTube, TikTok, and streaming platforms."
+        },
+        "4": {
+          "name": "Performance Analytics and Reporting",
+          "description": "Providing detailed insights into campaign performance with metrics-driven adjustments for continuous improvement."
+        },
+        "5": {
+          "name": "Audience Segmentation and Retargeting",
+          "description": "Utilising behavioural data to create targeted segments and retargeting strategies that re-engage potential customers."
+        },
+        "6": {
+          "name": "Affiliate Marketing Campaigns",
+          "description": "Establishing and managing partnerships with affiliates to drive performance-based results."
+        },
+        "7": {
+          "name": "Budget Optimization and Scaling",
+          "description": "Maximising ad spend efficiency by reallocating budgets to high-performing channels and scaling successful campaigns."
+        },
+        "8": {
+          "name": "Cross-Channel Advertising Integration",
+          "description": "Synchronising campaigns across platforms for consistent messaging and amplified reach."
+        }
+      }
+    },
+    "6": {
+      "category": "Brand Scaling",
+      "overview": {
+        "title": "Scaling your brand. Growing your audience. Achieving your potential.",
+        "highlightsText": "Why Brand Scaling Matters",
+        "highlights": {
+          "0": {
+            "title": "Audience Growth",
+            "description": "by tapping into the right strategies for individuals and small ventures."
+          },
+          "1": {
+            "title": "Engagement Rates",
+            "description": "through tailored brand development and outreach."
+          },
+          "2": {
+            "title": "Increased Visibility",
+            "description": "in niche markets, ensuring your brand gets noticed."
+          }
+        }
+      },
+      "list": {
+        "0": {
+          "name": "Personalized Growth Strategies",
+          "description": "Crafting step-by-step plans to expand your personal brand or small venture with limited resources."
+        },
+        "1": {
+          "name": "Competitor Insights and Positioning",
+          "description": "Analysing competitors to carve out your unique space and highlight your strengths."
+        },
+        "2": {
+          "name": "Niche Audience Targeting",
+          "description": "Focusing on the right market segments to maximise your brand's appeal and impact."
+        },
+        "3": {
+          "name": "Social Media Growth Support",
+          "description": "Developing tailored social media strategies to increase reach and engagement, leveraging trends and real-time data to build a loyal following."
+        },
+        "4": {
+          "name": "Brand Identity Scaling",
+          "description": "Ensuring your identity evolves cohesively as your audience grows and your presence expands."
+        },
+        "5": {
+          "name": "Outreach Campaigns",
+          "description": "Designing cost-effective campaigns to connect with a wider audience and build recognition."
+        },
+        "6": {
+          "name": "Content Amplification Strategies",
+          "description": "Optimising content for reach and resonance to grow your influence in chosen niches."
+        },
+        "7": {
+          "name": "Growth-Focused Tools and Resources",
+          "description": "Providing access to essential tools and strategies for scaling effectively at an individual level."
+        }
+      }
+    }
+  },
+  "orderPopup": {
+    "errors": {
+      "required": "This field is required",
+      "email": "Please provide a valid email address"
+    },
+    "title": "Order",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "activity": "Activity",
+      "socialMediaLink": "Social Media Link",
+      "message": "Your Message",
+      "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+    },
+    "buttonText": "Request",
+    "success": {
+      "title": "Submission successful!",
+      "description": {
+        "0": "We’ll review your order and get back to you soon.",
+        "1": "Thank you for choosing Lyxiom!"
+      },
+      "button": "OK"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": {
+        "0": "Start Your Brand",
+        "1": "Here"
+      },
+      "description": "Connecting ideas. Starting journeys. Building success.",
+      "directContacts": "Direct Contacts"
+    },
+    "form": {
+      "errors": {
+        "required": "This field is required",
+        "invalidEmail": "Please provide a valid email address"
+      },
+      "title": "How Can We Help You?",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "inquiry": "Your inquiry",
+        "privacyPolicy": "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."
+      },
+      "buttonText": "Request",
+      "success": {
+        "title": "Submission successful!",
+        "description": {
+          "0": "We’ll review your order and get back to you soon.",
+          "1": "Thank you for choosing Lyxiom!"
+        },
+        "button": "OK"
+      }
+    }
+  },
+  "brandingCourses": {
+    "hero": {
+      "title": {
+        "0": "Branding",
+        "1": "Courses"
+      },
+      "description": "Essential steps. Practical guidance. Your brand’s evolution, simplified."
+    },
+    "loop": {
+      "read": "Read",
+      "cards": {
+        "0": {
+          "title": "Market Research 101: Understanding Your Audience Without Breaking the Bank",
+          "description": "Discover practical, low-cost methods to identify your target market, uncover customer needs, and set your brand on the path to success. Perfect for beginners looking to build a strong foundation."
+        },
+        "1": {
+          "title": "Competitor Analysis: Spotting Opportunities to Stand Out",
+          "description": "Learn step-by-step techniques to uncover competitor strengths and weaknesses, spot market gaps, and position your brand for success in a crowded marketplace."
+        },
+        "2": {
+          "title": "Growing Your Social Media Audience: Free and Effective Strategies",
+          "description": "Unlock practical, no-cost methods to boost your social media presence, engage followers, and grow your audience organically with proven techniques."
+        },
+        "3": {
+          "title": "Building Your Brand Identity: Colours, Logos, and Messaging on a Budget",
+          "description": "Craft a standout brand identity with budget-friendly tips on choosing the right colours, designing impactful logos, and creating compelling messaging that resonates."
+        }
+      }
+    },
+    "contact": {
+      "text": "Stay Ahead with Us",
+      "buttonText": "Let’s Start Your Brand"
+    }
+  },
+  "brandingCoursedSlug": {
+    "back": "Back",
+    "next": "Next Tutorial",
+    "request": "Let’s Start Your Brand"
+  }
+}

@@ -2,8 +2,13 @@ import Link from "next/link";
 import "@/styles/footer.scss";
 import React from "react";
 import Socials from "./Socials";
+import { useTranslations } from "next-intl";
+
 const Footer = () => {
+  const t = useTranslations("footer");
+
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="_container">
@@ -13,38 +18,38 @@ const Footer = () => {
               <img src="/images/logo.svg" alt="logo" />
             </Link>
             <p>
-              Building Brands That <br />
-              Break Through.
+              {t('description.0', {fallback: "Building Brands That"})}<br />
+              {t('description.1', {fallback: "Break Through."})}
             </p>
             <Socials />
           </div>
           <div className="col-02">
             <div className="row main-menu">
               <div>
-                <Link href="/services">Our Services</Link>
+                <Link href="/services">{t('menu.ourServices', {fallback: "Our Services"})}</Link>
               </div>
               <div>
-                <Link href="/complex-solution">Complex Solutions</Link>
+                <Link href="/complex-solution">{t('menu.complexSolutions', {fallback: "Complex Solutions"})}</Link>
               </div>
               <div>
-                <Link href="/branding-courses">Branding Courses</Link>
+                <Link href="/branding-courses">{t('menu.brandingCourses', {fallback: "Branding Courses"})}</Link>
               </div>
               <div>
-                <Link href="/introducing-lyxiom">Introducting Lyxiom</Link>
+                <Link href="/introducing-lyxiom">{t('menu.introducingLyxiom', {fallback: "Introducting Lyxiom"})}</Link>
               </div>
             </div>
             <div className="row">
               <div>
-                <Link href="/terms-of-use">Terms of Use</Link>
+                <Link href="/terms-of-use">{t('menu.termsOfUse', {fallback: "Terms of Use"})}</Link>
               </div>
               <div>
-                <Link href="/privacy-policy">Your Privacy</Link>
+                <Link href="/privacy-policy">{t('menu.yourPrivacy', {fallback: "Your Privacy"})}</Link>
               </div>
               <div>
-                <Link href="/cookie-policy">Our Cookie</Link>
+                <Link href="/cookie-policy">{t('menu.ourCookie', {fallback: "Our Cookie"})}</Link>
               </div>
               <div>
-                <Link href="/refund-policy">Refund Policy</Link>
+                <Link href="/refund-policy">{t('menu.refundPolicy', {fallback: "Refund Policy"})}</Link>
               </div>
             </div>
           </div>
@@ -52,24 +57,24 @@ const Footer = () => {
         <div className="footer__contacts">
           <div className="col-01">
             <div>
-              <span>Email: </span>
+              <span>{t('email', {fallback: "Email:"})}{' '}</span>
               <Link href="mailto:info@lyxiom.com">info@lyxiom.com</Link>
             </div>
             <div>
-              <span>Phone: </span>
+              <span>{t('phone', {fallback: "Phone:"})}{' '}</span>
               <Link href="tel:+447460102445">+447460102445</Link>
             </div>
           </div>
           <div className="col-02">
             <div>
-              <span>Registered address: </span>
+              <span>{t('registeredAddress', {fallback: "Registered address:"})}{' '}</span>
               <Link href="#">
                 2nd Floor College House, 17 King Edwards Road, Ruislip, HA4 7AE,
                 London, United Kingdom
               </Link>
             </div>
             <div>
-              <span>Office address: </span>
+              <span>{t('officeAddress', {fallback: "Office address:"})}{' '}</span>
               <Link href="#">
                 Office 21, 1st floor, 286 Chase Road, N14 6HF, London, United
                 Kingdom
@@ -78,8 +83,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__copy">
-          © {currentYear} Lyxiom LTD. All rights safeguarded. Every idea, every
-          design — protected.
+          © {currentYear} Lyxiom LTD. {t('copyright', {fallback: "All rights safeguarded. Every idea, every design — protected."})}
         </div>
       </div>
     </footer>

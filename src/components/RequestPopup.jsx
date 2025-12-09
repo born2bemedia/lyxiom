@@ -9,23 +9,26 @@ import CheckboxIcon from "@/icons/CheckboxIcon";
 import Link from "next/link";
 import useCountryCode from "@/utils/useCountryCode";
 import { excludedCountries } from "@/utils/countries";
+import { useTranslations } from "next-intl";
 
 function RequestPopup() {
   const countryCode = useCountryCode();
   const { requestPopupDisplay, setRequestPopupDisplay } = usePopupStore();
 
+  const t = useTranslations("requestPopup");
+
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("This field is required"),
-    lastName: Yup.string().required("This field is required"),
+    firstName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    lastName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     email: Yup.string()
-      .email("Please provide a valid email address")
-      .required("This field is required"),
-    phone: Yup.string().required("This field is required"),
-    activity: Yup.string().required("This field is required"),
+      .email(t("errors.email", {fallback: "Please provide a valid email address"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
+    phone: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    activity: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     socialMediaLink: Yup.string(),
     agree: Yup.boolean()
-      .oneOf([true], "This field is required")
-      .required("This field is required"),
+      .oneOf([true], t("errors.required", {fallback: "This field is required"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
   });
 
   const initialValues = {
@@ -123,13 +126,13 @@ function RequestPopup() {
                   <Form>
                     {!status && (
                       <div className="form-inner">
-                        <h2>LET'S START YOUR BRAND</h2>
+                        <h2>{t('title', {fallback: "LET'S START YOUR BRAND"})}</h2>
 
                         <div>
                           <Field
                             name="firstName"
                             type="text"
-                            placeholder="First Name"
+                            placeholder={t('fields.firstName', {fallback: "First Name"})}
                             className={
                               touched.firstName && errors.firstName
                                 ? "invalid"
@@ -147,7 +150,7 @@ function RequestPopup() {
                           <Field
                             name="lastName"
                             type="text"
-                            placeholder="Last Name"
+                            placeholder={t('fields.lastName', {fallback: "Last Name"})}
                             className={
                               touched.lastName && errors.lastName
                                 ? "invalid"
@@ -165,7 +168,7 @@ function RequestPopup() {
                           <PhoneInput
                             country={countryCode}
                             excludeCountries={excludedCountries}
-                            placeholder="Phone"
+                            placeholder={t('fields.phone', {fallback: "Phone"})}
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={
                               touched.phone && errors.phone ? "invalid" : ""
@@ -182,7 +185,7 @@ function RequestPopup() {
                           <Field
                             name="email"
                             type="email"
-                            placeholder="Email"
+                            placeholder={t('fields.email', {fallback: "Email"})}
                             className={
                               touched.email && errors.email ? "invalid" : ""
                             }
@@ -198,7 +201,7 @@ function RequestPopup() {
                           <Field
                             name="activity"
                             type="text"
-                            placeholder="Activity"
+                            placeholder={t('fields.activity', {fallback: "Activity"})}
                             className={
                               touched.activity && errors.activity
                                 ? "invalid"
@@ -216,28 +219,28 @@ function RequestPopup() {
                           <Field
                             name="socialMediaLink"
                             type="text"
-                            placeholder="Social Media Link"
+                            placeholder={t('fields.socialMediaLink', {fallback: "Social Media Link"})}
                             className="field"
                           />
                         </div>
 
                         <div className="check-wrap">
-                          <h5>Your Goal:</h5>
+                          <h5>{t('yourGoal', {fallback: "Your Goal:"})}</h5>
                           <div className="checkboxes">
                             <label>
                               <Field name="goal" type="radio" value="Start" />
                               <CheckboxIcon />
-                              <span>Start</span>
+                              <span>{t('start', {fallback: "Start"})}</span>
                             </label>
                             <label>
                               <Field name="goal" type="radio" value="Growth" />
                               <CheckboxIcon />
-                              <span>Growth</span>
+                              <span>{t('growth', {fallback: "Growth"})}</span>
                             </label>
                             <label>
                               <Field name="goal" type="radio" value="Scale" />
                               <CheckboxIcon />
-                              <span>Scale</span>
+                              <span>{t('scale', {fallback: "Scale"})}</span>
                             </label>
                           </div>
                           <ErrorMessage
@@ -248,7 +251,7 @@ function RequestPopup() {
                         </div>
 
                         <div className="check-wrap">
-                          <h5>I need:</h5>
+                          <h5>{t('iNeed', {fallback: "I need:"})}</h5>
                           <div className="checkboxes">
                             <label>
                               <Field
@@ -257,7 +260,7 @@ function RequestPopup() {
                                 value="Complex Approach"
                               />
                               <CheckboxIcon />
-                              <span>Complex Approach</span>
+                              <span>{t('complexApproach', {fallback: "Complex Approach"})}</span>
                             </label>
                             <label>
                               <Field
@@ -266,7 +269,7 @@ function RequestPopup() {
                                 value="Specific Solution"
                               />
                               <CheckboxIcon />
-                              <span>Specific Solution</span>
+                              <span>{t('specificSolution', {fallback: "Specific Solution"})}</span>
                             </label>
                           </div>
                           <ErrorMessage
@@ -280,7 +283,7 @@ function RequestPopup() {
                           <Field
                             name="message"
                             type="text"
-                            placeholder="Your Message"
+                            placeholder={t('fields.message', {fallback: "Your Message"})}
                             className="field"
                           />
                         </div>
@@ -294,8 +297,7 @@ function RequestPopup() {
                             />
                             <CheckboxIcon />
                             <span>
-                              I agree to be contacted by Lyxiom in accordance
-                              with the Privacy Policy.
+                              {t('privacyPolicy', {fallback: "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."})}
                             </span>
                           </label>
                           <ErrorMessage
@@ -310,23 +312,23 @@ function RequestPopup() {
                           className="order-button"
                           disabled={isSubmitting}
                         >
-                          <span>Request</span>
+                          <span>{t('request', {fallback: "Request"})}</span>
                         </button>
                       </div>
                     )}
                     {status && status.success && (
                       <div className="success">
-                        <h3>Submission successful!</h3>
+                        <h3>{t('success.title', {fallback: "Submission successful!"})}</h3>
                         <p>
-                          We’ll review your request and get back to you soon.
+                          {t('success.description.0', {fallback: "We’ll review your request and get back to you soon."})}
                           <br />
-                          Thank you for choosing Lyxiom!
+                          {t('success.description.1', {fallback: "Thank you for choosing Lyxiom!"})}
                         </p>
                         <button
                           className="main-button"
                           onClick={() => closePopup(resetForm)}
                         >
-                          OK
+                          {t('success.button', {fallback: "OK"})}
                         </button>
                       </div>
                     )}

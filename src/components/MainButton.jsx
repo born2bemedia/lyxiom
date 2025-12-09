@@ -1,5 +1,5 @@
+import { Link } from "@/i18n/navigation";
 import ButtonArrow from "@/icons/ButtonArrow";
-import Link from "next/link";
 import React from "react";
 
 const MainButton = ({ text, link }) => {

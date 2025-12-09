@@ -294,9 +294,6 @@
     }
     .col-02 {
       width: calc(73% - 50px);
-      @media (max-width: rem(992)) {
-        width: 100%;
-      }
       display: flex;
       gap: rem(50);
       flex-wrap: wrap;

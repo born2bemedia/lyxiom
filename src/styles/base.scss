@@ -1,4 +1,5 @@
-@import "mixin";
+@use './mixin.scss' as *;
+@use "sass:math";
 
 * {
   box-sizing: border-box;

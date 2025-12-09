@@ -7,27 +7,30 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 import MainButton from "./MainButton";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import useCountryCode from "@/utils/useCountryCode";
 import { excludedCountries } from "@/utils/countries";
+import { useTranslations } from "next-intl";
 
 function OrderPopup() {
   const countryCode = useCountryCode();
   const { orderPopupDisplay, setOrderPopupDisplay, serviceValue } =
     usePopupStore();
 
+  const t = useTranslations("orderPopup");
+
   const validationSchema = Yup.object({
-    firstName: Yup.string().required("This field is required"),
-    lastName: Yup.string().required("This field is required"),
+    firstName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    lastName: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     email: Yup.string()
-      .email("Please provide a valid email address")
-      .required("This field is required"),
-    phone: Yup.string().required("This field is required"),
-    activity: Yup.string().required("This field is required"),
+      .email(t("errors.email", {fallback: "Please provide a valid email address"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
+    phone: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
+    activity: Yup.string().required(t("errors.required", {fallback: "This field is required"})),
     socialMediaLink: Yup.string(),
     agree: Yup.boolean()
-      .oneOf([true], "This field is required")
-      .required("This field is required"),
+      .oneOf([true], t("errors.required", {fallback: "This field is required"}))
+      .required(t("errors.required", {fallback: "This field is required"})),
   });
 
   const initialValues = {
@@ -128,13 +131,13 @@ function OrderPopup() {
                   <Form>
                     {!status?.success && (
                       <div className="form-inner">
-                        <h2>{serviceValue} Order</h2>
+                        <h2>{serviceValue} {t('title', {fallback: "Order"})}</h2>
 
                         <div>
                           <Field
                             name="firstName"
                             type="text"
-                            placeholder="First Name"
+                            placeholder={t('fields.firstName', {fallback: "First Name"})}
                             className={
                               touched.firstName && errors.firstName
                                 ? "invalid"
@@ -152,7 +155,7 @@ function OrderPopup() {
                           <Field
                             name="lastName"
                             type="text"
-                            placeholder="Last Name"
+                            placeholder={t('fields.lastName', {fallback: "Last Name"})}
                             className={
                               touched.lastName && errors.lastName
                                 ? "invalid"
@@ -170,7 +173,7 @@ function OrderPopup() {
                           <PhoneInput
                             country={countryCode}
                             excludeCountries={excludedCountries}
-                            placeholder="Phone"
+                            placeholder={t('fields.phone', {fallback: "Phone"})}
                             onChange={(phone) => setFieldValue("phone", phone)}
                             className={
                               touched.phone && errors.phone ? "invalid" : ""
@@ -187,7 +190,7 @@ function OrderPopup() {
                           <Field
                             name="email"
                             type="email"
-                            placeholder="Email"
+                            placeholder={t('fields.email', {fallback: "Email"})}
                             className={
                               touched.email && errors.email ? "invalid" : ""
                             }
@@ -203,7 +206,7 @@ function OrderPopup() {
                           <Field
                             name="activity"
                             type="text"
-                            placeholder="Activity"
+                            placeholder={t('fields.activity', {fallback: "Activity"})}
                             className={
                               touched.activity && errors.activity
                                 ? "invalid"
@@ -221,7 +224,7 @@ function OrderPopup() {
                           <Field
                             name="socialMediaLink"
                             type="text"
-                            placeholder="Social Media Link"
+                            placeholder={t('fields.socialMediaLink', {fallback: "Social Media Link"})}
                             className="field"
                           />
                         </div>
@@ -230,7 +233,7 @@ function OrderPopup() {
                           <Field
                             name="message"
                             type="text"
-                            placeholder="Your Message"
+                            placeholder={t('fields.message', {fallback: "Your Message"})}
                             className="field"
                           />
                         </div>
@@ -244,8 +247,7 @@ function OrderPopup() {
                             />
                             <CheckboxIcon />
                             <span>
-                              I agree to be contacted by Lyxiom in accordance
-                              with the Privacy Policy.
+                              {t('fields.privacyPolicy', {fallback: "I agree to be contacted by Lyxiom in accordance with the Privacy Policy."})}
                             </span>
                           </label>
                           <ErrorMessage
@@ -260,19 +262,19 @@ function OrderPopup() {
                           className="order-button"
                           disabled={isSubmitting}
                         >
-                          <span>Request</span>
+                          <span>{t('buttonText', {fallback: "Request"})}</span>
                         </button>
                       </div>
                     )}
                     {status && status.success && (
                       <div className="success">
-                        <h3>Submission successful!</h3>
+                        <h3>{t('success.title', {fallback: "Submission successful!"})}</h3>
                         <p>
-                          We’ll review your order and get back to you soon.
+                          {t('success.description.0', {fallback: "We’ll review your order and get back to you soon."})}
                           <br />
-                          Thank you for choosing Lyxiom!
+                          {t('success.description.1', {fallback: "Thank you for choosing Lyxiom!"})}
                         </p>
-                        <Link href="/">OK</Link>
+                        <Link href="/">{t('success.button', {fallback: "OK"})}</Link>
                       </div>
                     )}
                   </Form>
