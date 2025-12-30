@@ -1,4 +1,5 @@
 import { readdir, readFile } from "node:fs/promises";
+import { join } from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 
@@ -10,7 +11,8 @@ export async function getPost(slug, locale) {
     fileSlug = `DE-${slug}`;
   }
 
-  const text = await readFile(`./src/lib/courses/${fileSlug}.md`, "utf8");
+  const filePath = join(process.cwd(), "src", "lib", "courses", `${fileSlug}.md`);
+  const text = await readFile(filePath, "utf8");
   const {
     content,
     data: { title, seo_title, seo_description, thumbnail, poster_desc, poster_mobile, back_desc, back_mobile },
@@ -20,7 +22,8 @@ export async function getPost(slug, locale) {
 }
 
 export async function getSlugs() {
-  const files = await readdir("./src/lib/courses");
+  const dirPath = join(process.cwd(), "src", "lib", "courses");
+  const files = await readdir(dirPath);
   return files
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.slice(0, -".md".length));
@@ -35,7 +38,8 @@ export async function getPage(slug, locale) {
     fileSlug = `DE-${slug}`;
   }
 
-  const text = await readFile(`./src/lib/policies/${fileSlug}.md`, "utf8");
+  const filePath = join(process.cwd(), "src", "lib", "policies", `${fileSlug}.md`);
+  const text = await readFile(filePath, "utf8");
   const {
     content,
     data: { title, date },
@@ -45,7 +49,8 @@ export async function getPage(slug, locale) {
 }
 
 export async function getPageSlugs() {
-  const files = await readdir("./src/lib/policies/");
+  const dirPath = join(process.cwd(), "src", "lib", "policies");
+  const files = await readdir(dirPath);
   return files
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.slice(0, -".md".length));

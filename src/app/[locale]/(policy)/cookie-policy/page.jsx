@@ -32,8 +32,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const CookiePolicy = async () => {
-  const page = await getPage("cookie-policy");
+const CookiePolicy = async ({ params }) => {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
+  const page = await getPage("cookie-policy", locale);
   return (
     <>
       <section className="policy">

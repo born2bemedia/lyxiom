@@ -32,8 +32,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const PrivacyPolicy = async () => {
-  const page = await getPage("privacy-policy");
+const PrivacyPolicy = async ({ params }) => {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
+  const page = await getPage("privacy-policy", locale);
   return (
     <>
       <section className="policy">

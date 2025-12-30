@@ -32,8 +32,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const CookiePolicy = async () => {
-  const page = await getPage("refund-policy");
+const RefundPolicy = async ({ params }) => {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
+  const page = await getPage("refund-policy", locale);
   return (
     <>
       <section className="policy">
@@ -51,4 +53,4 @@ const CookiePolicy = async () => {
   );
 };
 
-export default CookiePolicy;
+export default RefundPolicy;
