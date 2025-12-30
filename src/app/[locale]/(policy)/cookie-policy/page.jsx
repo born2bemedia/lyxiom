@@ -18,7 +18,9 @@ export async function generateStaticParams() {
   return params;
 }
 
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({ params }) {
+  const awaitedParams = await params;
+  const { locale } = awaitedParams;
   const page = await getPage("cookie-policy", locale);
   const pageTitle = `${page.title} | Lyxiom`;
   return {
