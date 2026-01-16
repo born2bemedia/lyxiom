@@ -55,7 +55,7 @@ Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderung
 Wenn Sie Fragen oder Bedenken bezüglich unserer Verwendung von Cookies haben, kontaktieren Sie uns bitte unter:
 
 - **E-Mail**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefon**: [+447460102445](tel:+447460102445)
+- **Telefon**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Wir schätzen Ihre Privatsphäre und bemühen uns, Ihnen das bestmögliche Erlebnis zu bieten, während Sie unsere Website erkunden. Vielen Dank, dass Sie Lyxiom vertrauen.

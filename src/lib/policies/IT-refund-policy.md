@@ -44,7 +44,7 @@ I rimborsi non sono garantiti e saranno elaborati a nostra esclusiva discrezione
 Per qualsiasi domanda o ulteriore chiarimento, ti preghiamo di contattarci a:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefono**: [+447460102445](tel:+447460102445)
+- **Telefono**: [+447427892397](tel:+447427892397)
 - **Sito Web**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Grazie per la tua comprensione.

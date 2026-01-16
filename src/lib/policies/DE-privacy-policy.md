@@ -115,7 +115,7 @@ Wir können diese Datenschutzerklärung regelmäßig aktualisieren, um Änderung
 Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung haben oder wenn Sie Ihre Rechte in Bezug auf Ihre persönlichen Informationen ausüben möchten, können Sie uns gerne unter den folgenden Details kontaktieren:
 
 - **E-Mail**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefon**: [+447460102445](tel:+447460102445)
+- **Telefon**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Wir sind bestrebt, Ihre Anfragen zeitnah und effizient zu beantworten.

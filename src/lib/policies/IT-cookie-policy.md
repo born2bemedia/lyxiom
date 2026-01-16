@@ -55,7 +55,7 @@ Potremmo aggiornare periodicamente questa Politica sui Cookie per riflettere i c
 Se hai domande o dubbi su come utilizziamo i cookie, contattaci a:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefono**: [+447460102445](tel:+447460102445)
+- **Telefono**: [+447427892397](tel:+447427892397)
 - **Sito Web**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Rispettiamo la tua privacy e ci impegniamo a creare la migliore esperienza possibile mentre esplori il nostro sito web. Grazie per la fiducia riposta in Lyxiom.

@@ -44,7 +44,7 @@ Refunds are not guaranteed and will be processed at our sole discretion based on
 For any questions or further clarification, please contact us at:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Phone**: [+447460102445](tel:+447460102445)
+- **Phone**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Thank you for your understanding.

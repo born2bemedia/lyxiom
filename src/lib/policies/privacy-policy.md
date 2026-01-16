@@ -115,7 +115,7 @@ We may update this Privacy Policy periodically to reflect changes in our practic
 If you have any questions or concerns about this Privacy Policy, or if you wish to exercise your rights regarding your personal information, please feel free to contact us using the details below:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Phone**: [+447460102445](tel:+447460102445)
+- **Phone**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 We are committed to responding to your inquiries in a timely and efficient manner.

@@ -99,7 +99,7 @@ Il mancato esercizio da parte di **Lyxiom LTD** di un diritto derivante da quest
 Se hai domande o suggerimenti riguardo questi Termini di Utilizzo o necessiti di ulteriore assistenza, non esitare a contattarci a:
 
 - **Email**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefono**: [+447460102445](tel:+447460102445)
+- **Telefono**: [+447427892397](tel:+447427892397)
 - **Sito Web**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Saremo lieti di assisterti.

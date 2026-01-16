@@ -99,7 +99,7 @@ Das Unterlassen der Durchsetzung eines Teils dieser Nutzungsbedingungen durch **
 Wenn Sie Fragen oder Anregungen zu diesen Nutzungsbedingungen haben oder weitere Unterstützung benötigen, kontaktieren Sie uns bitte unter:
 
 - **E-Mail**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefon**: [+447460102445](tel:+447460102445)
+- **Telefon**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Wir helfen Ihnen gerne weiter.

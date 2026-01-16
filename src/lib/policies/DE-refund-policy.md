@@ -44,7 +44,7 @@ Rückerstattungen sind nicht garantiert und werden nach unserem alleinigen Ermes
 Bei Fragen oder weiteren Klarstellungen kontaktieren Sie uns bitte unter:
 
 - **E-Mail**: [info@lyxiom.com](mailto:info@lyxiom.com)
-- **Telefon**: [+447460102445](tel:+447460102445)
+- **Telefon**: [+447427892397](tel:+447427892397)
 - **Website**: [https://lyxiom.com/](https://lyxiom.com/)
 
 Vielen Dank für Ihr Verständnis.

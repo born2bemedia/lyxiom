@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             <div>
               <span>{t('phone', {fallback: "Phone:"})}{' '}</span>
-              <Link href="tel:+447460102445">+447460102445</Link>
+              <Link href="tel:+447427892397">+447427892397</Link>
             </div>
           </div>
           <div className="col-02">
